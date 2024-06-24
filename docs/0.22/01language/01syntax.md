@@ -75,4 +75,4 @@ Blank lines are ignored.
 Indentation is optional, as (mostly) every statement ends with `end`.
 
 ## Whitespaces
-Whitespaces are ignored everywhere (except in string literals and to differentiate things such as `foobar` and `foo bar`, or `+=` and `+ =`).
+Whitespaces are ignored everywhere (except in [string literals](03string_literals.md) and to differentiate things such as `foobar` and `foo bar`, or `+=` and `+ =`).

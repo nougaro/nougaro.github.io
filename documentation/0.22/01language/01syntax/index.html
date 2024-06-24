@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
+        
         <meta name="author" content="Jean Dubois">
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Nougaro Documentation</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Very basic syntax - Nougaro Documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Nougaro Documentation</a>
+                <a class="navbar-brand" href="../../..">Nougaro Documentation</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,18 +35,18 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Welcome to the Nougaro documentation</a>
+                                <a href="../../.." class="nav-link">Welcome to the Nougaro documentation</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">0.22</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">0.22</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="0.22/" class="dropdown-item">Nougaro 0.22.0-beta documentation</a>
+    <a href="../../" class="dropdown-item">Nougaro 0.22.0-beta documentation</a>
 </li>
                                     
 <li>
-    <a href="0.22/hello_world/" class="dropdown-item">Hello, world!</a>
+    <a href="../../hello_world/" class="dropdown-item">Hello, world!</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -54,15 +54,15 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="0.22/01language/01syntax/" class="dropdown-item">Very basic syntax</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Very basic syntax</a>
 </li>
             
 <li>
-    <a href="0.22/01language/02number_literals/" class="dropdown-item">Number literals</a>
+    <a href="../02number_literals/" class="dropdown-item">Number literals</a>
 </li>
             
 <li>
-    <a href="0.22/01language/03string_literals/" class="dropdown-item">String literals</a>
+    <a href="../03string_literals/" class="dropdown-item">String literals</a>
 </li>
     </ul>
   </li>
@@ -77,12 +77,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../../hello_world/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="0.22/" class="nav-link">
+                                <a rel="next" href="../02number_literals/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -104,17 +104,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#welcome-to-the-nougaro-documentation" class="nav-link">Welcome to the Nougaro documentation</a>
+            <li class="nav-item" data-bs-level="1"><a href="#very-basic-syntax" class="nav-link">Very basic syntax</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#choose-your-version" class="nav-link">Choose your version</a>
+            <li class="nav-item" data-bs-level="2"><a href="#comments" class="nav-link">Comments</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#license" class="nav-link">License</a>
+            <li class="nav-item" data-bs-level="2"><a href="#line-joining" class="nav-link">Line joining</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#blank-lines" class="nav-link">Blank lines</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#indentation" class="nav-link">Indentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#whitespaces" class="nav-link">Whitespaces</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -125,28 +133,64 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-the-nougaro-documentation">Welcome to the Nougaro documentation</h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This documentation is a work-in-progress and is not actually the most up-to-date source of information.
-For the actual documentation (that will soon be moved here), see the <a href="https://github.com/jd-develop/nougaro/wiki">wiki</a></p>
-</div>
-<h2 id="overview">Overview</h2>
-<p>Nougaro is an interpreted dynamic-typed programming language.</p>
-<h2 id="choose-your-version">Choose your version</h2>
-<ul>
-<li><a href="0.22/">0.22</a></li>
-</ul>
-<h2 id="license">License</h2>
-<p>This document is under the <a href="../LICENSE">GNU FDL</a> licence.</p>
-<blockquote>
-<p>Permission is granted to copy, distribute and/or modify this document
-under the terms of the GNU Free Documentation License, Version 1.3
-or any later version published by the Free Software Foundation;
-with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-A copy of the license is included in the section entitled "GNU
-Free Documentation License".</p>
-</blockquote></div>
+<h1 id="very-basic-syntax">Very basic syntax</h1>
+<p>This document covers the basic syntax of Nougaro.</p>
+<h2 id="comments">Comments</h2>
+<p>There are two types of comments in Nougaro: single-line comments and multi-line comments.</p>
+<h3 id="single-line-comments">Single-line comments</h3>
+<p>Single-line comments start with <code>#</code> and end with a new line. They can start at the beginning of a line or after some code.</p>
+<p>Example:</p>
+<pre><code class="language-nougaro"># this is a single-line comment
+foo(bar)  # this calls the function foo with the argument bar
+</code></pre>
+<h3 id="multi-line-comments">Multi-line comments</h3>
+<p>Multi-line comments start with <code>/*</code> and end with <code>*/</code>. They can start and stop at any point in the code.</p>
+<p>Example:</p>
+<pre><code class="language-nougaro">/* this is
+a multi
+line comment */
+
+print(&quot;hello&quot;)  /* this is also a multi
+line comment*/
+</code></pre>
+<p>Multi-line comments can also be only on one line:</p>
+<pre><code class="language-nougaro">print(&quot;hello&quot;)  /* this is a multi-line comment that is only on one line */
+</code></pre>
+<p>Multi-line comments are simply ignored, which mean you can do things such as:</p>
+<pre><code class="language-nougaro">print( /* this is a comment */ &quot;hello&quot; /* this is another comment */)
+print(/*
+
+this
+is 
+actually
+a
+comment*/ &quot;hello&quot;)
+</code></pre>
+<p>Multi-line comments can be nested:</p>
+<pre><code class="language-nougaro">/* comment 
+    /* comment-inside comment*/
+    /*
+       /* comment-ception */
+    */
+    comment
+*/
+</code></pre>
+<h2 id="line-joining">Line joining</h2>
+<p>If you don’t have enough space on your line, you can join two “real lines” to form a Nougaro line, using a backspace.</p>
+<p>Example:</p>
+<pre><code class="language-nougaro">var fruits = [\
+    &quot;banana&quot;, \
+    &quot;apple&quot;, \
+    &quot;raspberry&quot;, \
+    &quot;pineapple&quot; \
+]
+</code></pre>
+<h2 id="blank-lines">Blank lines</h2>
+<p>Blank lines are ignored.</p>
+<h2 id="indentation">Indentation</h2>
+<p>Indentation is optional, as (mostly) every statement ends with <code>end</code>.</p>
+<h2 id="whitespaces">Whitespaces</h2>
+<p>Whitespaces are ignored everywhere (except in <a href="../03string_literals/">string literals</a> and to differentiate things such as <code>foobar</code> and <code>foo bar</code>, or <code>+=</code> and <code>+ =</code>).</p></div>
             </div>
         </div>
 
@@ -154,13 +198,13 @@ Free Documentation License".</p>
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -225,8 +269,3 @@ Free Documentation License".</p>
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.0
-Build Date UTC : 2024-06-24 14:11:54.071772+00:00
--->
