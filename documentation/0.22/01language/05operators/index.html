@@ -8,7 +8,7 @@
         <meta name="author" content="Jean Dubois">
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Very basic syntax - Nougaro Documentation</title>
+        <title>Operators - Nougaro Documentation</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../css/brands.min.css" rel="stylesheet">
@@ -54,7 +54,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Very basic syntax</a>
+    <a href="../01syntax/" class="dropdown-item">Very basic syntax</a>
 </li>
             
 <li>
@@ -70,7 +70,7 @@
 </li>
             
 <li>
-    <a href="../05operators/" class="dropdown-item">Operators</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Operators</a>
 </li>
             
 <li>
@@ -89,12 +89,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../hello_world/" class="nav-link">
+                                <a rel="prev" href="../04identifiers_and_keywords/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../02number_literals/" class="nav-link">
+                                <a rel="next" href="../06values/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -116,25 +116,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#very-basic-syntax" class="nav-link">Very basic syntax</a>
+            <li class="nav-item" data-bs-level="1"><a href="#operators" class="nav-link">Operators</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#comments" class="nav-link">Comments</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#line-joining" class="nav-link">Line joining</a>
+            <li class="nav-item" data-bs-level="2"><a href="#mathematical-operators" class="nav-link">Mathematical operators</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#blank-lines" class="nav-link">Blank lines</a>
+            <li class="nav-item" data-bs-level="2"><a href="#test-operators" class="nav-link">Test operators</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#indentation" class="nav-link">Indentation</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#whitespaces" class="nav-link">Whitespaces</a>
+            <li class="nav-item" data-bs-level="2"><a href="#logical-operators" class="nav-link">Logical operators</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -145,64 +137,160 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="very-basic-syntax">Very basic syntax</h1>
-<p>This document covers the basic syntax of Nougaro.</p>
-<h2 id="comments">Comments</h2>
-<p>There are two types of comments in Nougaro: single-line comments and multi-line comments.</p>
-<h3 id="single-line-comments">Single-line comments</h3>
-<p>Single-line comments start with <code>#</code> and end with a new line. They can start at the beginning of a line or after some code.</p>
-<p>Example:</p>
-<pre><code class="language-nougaro"># this is a single-line comment
-foo(bar)  # this calls the function foo with the argument bar
-</code></pre>
-<h3 id="multi-line-comments">Multi-line comments</h3>
-<p>Multi-line comments start with <code>/*</code> and end with <code>*/</code>. They can start and stop at any point in the code.</p>
-<p>Example:</p>
-<pre><code class="language-nougaro">/* this is
-a multi
-line comment */
-
-print(&quot;hello&quot;)  /* this is also a multi
-line comment*/
-</code></pre>
-<p>Multi-line comments can also be only on one line:</p>
-<pre><code class="language-nougaro">print(&quot;hello&quot;)  /* this is a multi-line comment that is only on one line */
-</code></pre>
-<p>Multi-line comments are simply ignored, which mean you can do things such as:</p>
-<pre><code class="language-nougaro">print( /* this is a comment */ &quot;hello&quot; /* this is another comment */)
-print(/*
-
-this
-is 
-actually
-a
-comment*/ &quot;hello&quot;)
-</code></pre>
-<p>Multi-line comments can be nested:</p>
-<pre><code class="language-nougaro">/* comment 
-    /* comment-inside comment*/
-    /*
-       /* comment-ception */
-    */
-    comment
-*/
-</code></pre>
-<h2 id="line-joining">Line joining</h2>
-<p>If you don’t have enough space on your line, you can join two “real lines” to form a Nougaro line, using a backspace.</p>
-<p>Example:</p>
-<pre><code class="language-nougaro">var fruits = [\
-    &quot;banana&quot;, \
-    &quot;apple&quot;, \
-    &quot;raspberry&quot;, \
-    &quot;pineapple&quot; \
-]
-</code></pre>
-<h2 id="blank-lines">Blank lines</h2>
-<p>Blank lines are ignored.</p>
-<h2 id="indentation">Indentation</h2>
-<p>Indentation is optional, as (mostly) every statement ends with <code>end</code>.</p>
-<h2 id="whitespaces">Whitespaces</h2>
-<p>Whitespaces are ignored everywhere (except in <a href="../03string_literals/">string literals</a> and to differentiate things such as <code>foobar</code> and <code>foo bar</code>, or <code>+=</code> and <code>+ =</code>).</p></div>
+<h1 id="operators">Operators</h1>
+<h2 id="mathematical-operators">Mathematical operators</h2>
+<p>Here all the mathematical operators in Nougaro (ordered by priority):</p>
+<table>
+<thead>
+<tr>
+<th>Nougaro</th>
+<th>Python</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>^</code></td>
+<td><code>**</code></td>
+<td>power</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td><code>*</code></td>
+<td>multiplication</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td><code>%</code></td>
+<td>modulo</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><code>/</code></td>
+<td>division</td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td><code>//</code></td>
+<td>floor division</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td><code>+</code></td>
+<td>addition</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td><code>-</code></td>
+<td>substraction</td>
+</tr>
+<tr>
+<td><code>&amp;</code></td>
+<td><code>&amp;</code></td>
+<td>bitwise and</td>
+</tr>
+<tr>
+<td><code>|</code></td>
+<td><code>|</code></td>
+<td>bitwise or</td>
+</tr>
+<tr>
+<td><code>^^</code></td>
+<td><code>^</code></td>
+<td>bitwise xor</td>
+</tr>
+<tr>
+<td><code>~</code></td>
+<td><code>~</code></td>
+<td>bitwise not</td>
+</tr>
+</tbody>
+</table>
+<p>It respects operation priority and you can use parenthesis.</p>
+<h3 id="examples">Examples</h3>
+<ul>
+<li><code>3 * 4</code> returns 12</li>
+<li><code>4 / 2</code> returns 2</li>
+<li><code>1 + 1</code> returns 2</li>
+<li><code>3 - 4</code> returns -1</li>
+<li><code>10 % 7</code> returns 3</li>
+<li><code>10 % 3</code> returns 1</li>
+<li><code>10 // 7</code> returns 1</li>
+<li><code>10 // 3</code> returns 3</li>
+<li><code>5 ^ 2</code> returns 25</li>
+<li><code>62 &amp; 35</code> returns 34</li>
+<li>
+<p><code>~1</code> returns -2 and <code>~-2</code> returns 1</p>
+</li>
+<li>
+<p><code>5 + 5 * 3 + 2</code> returns 22</p>
+</li>
+<li><code>(5 + 5) * (3 + 2)</code> returns 50</li>
+</ul>
+<h2 id="test-operators">Test operators</h2>
+<p>They are exactly same as Python ones:</p>
+<table>
+<thead>
+<tr>
+<th>Nougaro</th>
+<th>Python</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td><code>==</code></td>
+<td>equals to</td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td><code>!=</code></td>
+<td>different than</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td><code>&lt;</code></td>
+<td>less than</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td><code>&lt;=</code></td>
+<td>less than or equals</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td><code>&gt;</code></td>
+<td>greater than</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td><code>&gt;=</code></td>
+<td>greater than or equals</td>
+</tr>
+<tr>
+<td><code>in</code></td>
+<td><code>in</code></td>
+<td>check if a value is in another</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>the <code>in</code> keyword can check if:</p>
+<ul>
+<li><code>int</code>, <code>float</code>, <code>str</code>, <code>list</code> or <code>NoneValue</code> is in another <code>str</code></li>
+<li>any value is in a <code>list</code></li>
+</ul>
+</div>
+<h2 id="logical-operators">Logical operators</h2>
+<p>There is one logical operator that isn't here in Python. There is a list:
+| Nougaro   | Python    | Comments                        |
+|-----------|-----------|---------------------------------|
+| <code>and</code>     | <code>and</code>     | boolean 'and'                   |
+| <code>or</code>      | <code>or</code>      | boolean 'or'                    |
+| <code>xor</code>     | <code>^</code>       | boolean 'exclusive or'          |
+| <code>not</code>     | <code>not</code>     | boolean 'not' (inverter)        |</p></div>
             </div>
         </div>
 

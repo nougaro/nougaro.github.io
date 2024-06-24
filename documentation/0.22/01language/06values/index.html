@@ -8,7 +8,7 @@
         <meta name="author" content="Jean Dubois">
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Very basic syntax - Nougaro Documentation</title>
+        <title>Values - Nougaro Documentation</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../css/brands.min.css" rel="stylesheet">
@@ -54,7 +54,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Very basic syntax</a>
+    <a href="../01syntax/" class="dropdown-item">Very basic syntax</a>
 </li>
             
 <li>
@@ -74,7 +74,7 @@
 </li>
             
 <li>
-    <a href="../06values/" class="dropdown-item">Values</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Values</a>
 </li>
     </ul>
   </li>
@@ -89,12 +89,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../hello_world/" class="nav-link">
+                                <a rel="prev" href="../05operators/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../02number_literals/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -116,25 +116,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#very-basic-syntax" class="nav-link">Very basic syntax</a>
+            <li class="nav-item" data-bs-level="1"><a href="#values" class="nav-link">Values</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#comments" class="nav-link">Comments</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#line-joining" class="nav-link">Line joining</a>
+            <li class="nav-item" data-bs-level="2"><a href="#numbers" class="nav-link">Numbers</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#blank-lines" class="nav-link">Blank lines</a>
+            <li class="nav-item" data-bs-level="2"><a href="#strings" class="nav-link">Strings</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#indentation" class="nav-link">Indentation</a>
+            <li class="nav-item" data-bs-level="2"><a href="#lists" class="nav-link">Lists</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#whitespaces" class="nav-link">Whitespaces</a>
+            <li class="nav-item" data-bs-level="2"><a href="#none" class="nav-link">None</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -145,64 +141,55 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="very-basic-syntax">Very basic syntax</h1>
-<p>This document covers the basic syntax of Nougaro.</p>
-<h2 id="comments">Comments</h2>
-<p>There are two types of comments in Nougaro: single-line comments and multi-line comments.</p>
-<h3 id="single-line-comments">Single-line comments</h3>
-<p>Single-line comments start with <code>#</code> and end with a new line. They can start at the beginning of a line or after some code.</p>
-<p>Example:</p>
-<pre><code class="language-nougaro"># this is a single-line comment
-foo(bar)  # this calls the function foo with the argument bar
-</code></pre>
-<h3 id="multi-line-comments">Multi-line comments</h3>
-<p>Multi-line comments start with <code>/*</code> and end with <code>*/</code>. They can start and stop at any point in the code.</p>
-<p>Example:</p>
-<pre><code class="language-nougaro">/* this is
-a multi
-line comment */
-
-print(&quot;hello&quot;)  /* this is also a multi
-line comment*/
-</code></pre>
-<p>Multi-line comments can also be only on one line:</p>
-<pre><code class="language-nougaro">print(&quot;hello&quot;)  /* this is a multi-line comment that is only on one line */
-</code></pre>
-<p>Multi-line comments are simply ignored, which mean you can do things such as:</p>
-<pre><code class="language-nougaro">print( /* this is a comment */ &quot;hello&quot; /* this is another comment */)
-print(/*
-
-this
-is 
-actually
-a
-comment*/ &quot;hello&quot;)
-</code></pre>
-<p>Multi-line comments can be nested:</p>
-<pre><code class="language-nougaro">/* comment 
-    /* comment-inside comment*/
-    /*
-       /* comment-ception */
-    */
-    comment
-*/
-</code></pre>
-<h2 id="line-joining">Line joining</h2>
-<p>If you don’t have enough space on your line, you can join two “real lines” to form a Nougaro line, using a backspace.</p>
-<p>Example:</p>
-<pre><code class="language-nougaro">var fruits = [\
-    &quot;banana&quot;, \
-    &quot;apple&quot;, \
-    &quot;raspberry&quot;, \
-    &quot;pineapple&quot; \
-]
-</code></pre>
-<h2 id="blank-lines">Blank lines</h2>
-<p>Blank lines are ignored.</p>
-<h2 id="indentation">Indentation</h2>
-<p>Indentation is optional, as (mostly) every statement ends with <code>end</code>.</p>
-<h2 id="whitespaces">Whitespaces</h2>
-<p>Whitespaces are ignored everywhere (except in <a href="../03string_literals/">string literals</a> and to differentiate things such as <code>foobar</code> and <code>foo bar</code>, or <code>+=</code> and <code>+ =</code>).</p></div>
+<h1 id="values">Values</h1>
+<p>Here is the list of the value types in Nougaro:</p>
+<ul>
+<li>int (<a href="#numbers">integers</a>). Internal type: <code>int</code></li>
+<li>float (<a href="#numbers">floats</a>). Internal type: <code>float</code></li>
+<li>str (<a href="#strings">strings</a>). Internal type: <code>str</code></li>
+<li>list (<a href="#lists">lists</a>). Internal type: <code>list</code></li>
+<li>NoneType (<a href="#none">None</a>). Internal type: <code>NoneValue</code></li>
+<li><a href="link-to-functions">function</a>. Internal type: <code>func</code>.</li>
+<li><a href="link-to-modules">module</a>. Internal type: <code>module</code></li>
+<li><a href="link-to-objects">constructor</a>. Internal type: <code>constructor</code></li>
+<li><a href="link-to-objects">object</a>. Internal type: depends on the class’ name, and it is <code>&lt;class&gt;</code> if the class has no name.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Internal value types are base value (type: <code>BaseValue</code>) and default value (type: <code>DefaultValue</code>)</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Before 0.22.0-beta, a distinction was made between <code>func</code> (user-defined function or function in a module written in Nougaro) and <code>built-in func</code> (built-in function or function in a module written in Python)</p>
+</div>
+<h2 id="numbers">Numbers</h2>
+<p>Numbers represents real-life numbers. The two types of numbers are <code>int</code> and <code>float</code>.</p>
+<p>To declare a number, you can use a <a href="../02number_literals/">number literal</a>.</p>
+<p><a href="../05operators/">Operations</a> that can be used between two numbers are: addition, substraction, multiplication, power.
+If the second number is non-zero, division, modulo and floor division can be used.
+All these operations follow the mathematical logic (except for 0^0, that returns 1).</p>
+<p>Multiplication can be used between a integer (type <code>int</code>) and a <a href="#strings">string</a> or a <a href="#lists">list</a>. For example, <code>3*"str"</code> returns <code>"strstrstr"</code>, and <code>2*[1, 2]</code> returns <code>[1, 2, 1, 2]</code>.</p>
+<p>In boolean context, a number is true if it is non-zero.</p>
+<h2 id="strings">Strings</h2>
+<p>The type of a string is <code>str</code>.</p>
+<p>To declare a string, you can use a <a href="../03string_literals/">string literal</a></p>
+<p>The only <a href="../05operators/">operation</a> that can be used between strings is addition, which concatenates the string with the other. For example, <code>"hello, " + "world!"</code> returns <code>"hello, world!"</code>.</p>
+<p>Multiplication can be used between a string and an <a href="#numbers">integer</a> (type <code>int</code>). For example, <code>"str"*3</code> returns <code>"strstrstr"</code>.</p>
+<p>In boolean context, a string is true if it contains at least one character.</p>
+<h2 id="lists">Lists</h2>
+<p>Lists are a succession of values.</p>
+<p>To declare a list, you can use brackets (<code>[]</code>), and put every value separated by a comma (<code>,</code>) inside.</p>
+<p>The only <a href="../05operators/">operation</a> that can be used between two lists is multiplication, which extends the first list with the content of the second list.</p>
+<p>Addition can be used between a list and any other value to add an element to the list.</p>
+<p>Substraction can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>) to pop (i.e. delete) an element by index. This supports negative numbers.</p>
+<p>Multiplication can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>). For example, <code>[1, 2]*2</code> returns <code>[1, 2, 1, 2]</code>.</p>
+<p>Division can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>) to get an element by index. This supports negative numbers.</p>
+<p>In boolean context, a list is true if it is not empty</p>
+<h2 id="none">None</h2>
+<p>None is a value to denote the absence of other values.</p>
+<p>It is accessible trought the <code>None</code> built-in variable.</p>
+<p>No <a href="../05operators/">operation</a> can be used on <code>None</code>.</p>
+<p>In boolean context, <code>None</code> is false.</p></div>
             </div>
         </div>
 

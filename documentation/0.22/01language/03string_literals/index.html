@@ -64,6 +64,18 @@
 <li>
     <a href="./" class="dropdown-item active" aria-current="page">String literals</a>
 </li>
+            
+<li>
+    <a href="../04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../06values/" class="dropdown-item">Values</a>
+</li>
     </ul>
   </li>
                                 </ul>
@@ -82,7 +94,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../04identifiers_and_keywords/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -119,7 +131,37 @@
 <pre><code class="language-nougaro">&quot;hello&quot;
 'hello'
 «hello»
-</code></pre></div>
+</code></pre>
+<p>Escape characters:</p>
+<ul>
+<li><code>\'</code>         :  '</li>
+<li><code>\"</code>         :  "</li>
+<li><code>\»</code>         :  »</li>
+<li><code>\n</code>         :  backline</li>
+<li><code>\t</code>         :  tab</li>
+<li><code>\\</code>         :  backslash</li>
+<li><code>\xAA</code>       :  unicode character number AA (hex)</li>
+<li><code>\uAAAA</code>     :  unicode character number AAAA (hex)</li>
+<li><code>\UAAAAAAAA</code> :  unicode character number AAAAAAAA (hex)</li>
+<li><code>\N{NAME}</code>   :  unicode character with name NAME. Returns <code>SyntaxError</code> if it doesn’t exist.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The backslash isn’t left if the next character is not recognised (example: <code>"\/"</code> is the same as <code>"/"</code>, and not <code>"\\/"</code>)</p>
+</div>
+<p>Examples:</p>
+<pre><code class="language-nougaro">'I\'m a string literal'
+&quot;He said: \&quot;'I'm a string literal'\&quot;&quot;
+&quot;\\ backslashes, \t tabs and \n backlines&quot;
+«This string has a \N{NO BREAK SPACE}»
+&quot;\N{Latin Small Letter C with Cedilla}: \xe7&quot;
+&quot;\N{Greek Small Letter Eta with Dasia and Oxia and Ypogegrammeni}: \u1F95&quot;
+&quot;This is Person Shrugging (🤷): \U0001f937&quot;
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can use the <a href="0xmetas.md">meta</a> <code>nbspBetweenFrenchGuillemets</code> to be forced to use a no-break-space or a narrow-no-break-space after <code>«</code> and before <code>»</code>. These NBSP are not counted in the string and this does not affect the other string delimiters.</p>
+</div></div>
             </div>
         </div>
 
