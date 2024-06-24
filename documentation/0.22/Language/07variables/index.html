@@ -8,7 +8,7 @@
         <meta name="author" content="Jean Dubois">
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>01builtin variables - Nougaro Documentation</title>
+        <title>Variables - Nougaro Documentation</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../css/brands.min.css" rel="stylesheet">
@@ -50,59 +50,59 @@
 </li>
                                     
   <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">01language</a>
+    <a href="#" class="dropdown-item">Expanding</a>
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../01language/01syntax/" class="dropdown-item">Very basic syntax</a>
-</li>
-            
-<li>
-    <a href="../../01language/02number_literals/" class="dropdown-item">Number literals</a>
-</li>
-            
-<li>
-    <a href="../../01language/03string_literals/" class="dropdown-item">String literals</a>
-</li>
-            
-<li>
-    <a href="../../01language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
-</li>
-            
-<li>
-    <a href="../../01language/05operators/" class="dropdown-item">Operators</a>
-</li>
-            
-<li>
-    <a href="../../01language/06values/" class="dropdown-item">Values</a>
-</li>
-            
-<li>
-    <a href="../../01language/07variables/" class="dropdown-item">Variables</a>
+    <a href="../../Expanding/Write-libs/" class="dropdown-item">Write libs</a>
 </li>
     </ul>
   </li>
                                     
   <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">02stdlib</a>
+    <a href="#" class="dropdown-item">Language</a>
     <ul class="dropdown-menu">
             
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">01builtin variables</a>
+    <a href="../01syntax/" class="dropdown-item">Very basic syntax</a>
 </li>
             
 <li>
-    <a href="../02builtin-functions/" class="dropdown-item">02builtin functions</a>
+    <a href="../02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Variables</a>
 </li>
     </ul>
   </li>
                                     
   <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">03expanding nougaro</a>
+    <a href="#" class="dropdown-item">Stdlib</a>
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../03expanding_nougaro/Write-libs/" class="dropdown-item">Write libs</a>
+    <a href="../../stdlib/01builtin-variables/" class="dropdown-item">01builtin variables</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/02builtin-functions/" class="dropdown-item">02builtin functions</a>
 </li>
     </ul>
   </li>
@@ -117,12 +117,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../01language/07variables/" class="nav-link">
+                                <a rel="prev" href="../06values/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../02builtin-functions/" class="nav-link">
+                                <a rel="next" href="../../stdlib/01builtin-variables/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -143,12 +143,111 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#variables" class="nav-link">Variables</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#definition" class="nav-link">Definition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#edition" class="nav-link">Edition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#access" class="nav-link">Access</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#deletion" class="nav-link">Deletion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#examples" class="nav-link">Examples</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
+<h1 id="variables">Variables</h1>
+<h2 id="definition">Definition</h2>
+<p>Use the syntax <code>var identifier = value</code> (see <a href="../04identifiers_and_keywords/">identifiers</a> and <a href="../06values/">values</a>) to assign the value <code>value</code> to the variable named <code>identifier</code>. The expression <code>var identifier = value</code> returns <code>value</code>.</p>
+<p>To assign the same value to multiple variables, you can use <code>var variable1 = var variable2 = var variable3 = value</code>.</p>
+<p>If you want to assign multiple values to multiple variables, you can use <code>var variable1, variable2 = value1, value2</code>. This can be used to swap variables: <code>var a, b = b, a</code>.</p>
+<p>Except for <a href="../04identifiers_and_keywords/#keywords">keywords</a>, there are no prohibited variable name.</p>
+<h2 id="edition">Edition</h2>
+<p>You can edit variables by multiple ways:</p>
+<ul>
+<li><code>var a = value</code>;</li>
+<li><code>var a += value</code>: same as <code>var a = a + value</code>;</li>
+<li><code>var a ++</code>: same as <code>var a += 1</code>;</li>
+<li><code>var a -= value</code>: same as <code>var a = a - value</code>;</li>
+<li><code>var a --</code>: same as <code>var a -= 1</code>;</li>
+<li><code>var a *= value</code>: same as <code>var a = a * value</code>;</li>
+<li><code>var a /= value</code>: same as <code>var a = a / value</code>;</li>
+<li><code>var a ^= value</code>: same as <code>var a = a ^ value</code>;</li>
+<li><code>var a //= value</code>: same as <code>var a = a // value</code>;</li>
+<li><code>var a %= value</code>: same as <code>var a = a % value</code>;</li>
+<li><code>var a ||= value</code>: same as <code>var a = a or value</code>;</li>
+<li><code>var a &amp;&amp;= value</code>: same as <code>var a = a and value</code>;</li>
+<li><code>var a ^^^= value</code>: same as <code>var a = a xor value</code>;</li>
+<li><code>var a |= value</code>: same as <code>var a = a | value</code>;</li>
+<li><code>var a &amp;= value</code>: same as <code>var a = a &amp; value</code>;</li>
+<li><code>var a ^^= value</code>: same as <code>var a = a ^^ value</code>;</li>
+<li><code>var a === value</code>: same as <code>var a = a == value</code>;</li>
+<li><code>var a &lt;== value</code>: same as <code>var a = a &lt;= value</code>;</li>
+<li><code>var a &lt;&lt;= value</code>: same as <code>var a = a &lt; value</code>;</li>
+<li><code>var a &gt;== value</code>: same as <code>var a = a &gt;= value</code>;</li>
+<li><code>var a &gt;&gt;= value</code>: same as <code>var a = a &gt; value</code>.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>For details about these operators, see <a href="../05operators/">this page</a>.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can also edit multiple variables at the same time:</p>
+<ul>
+<li><code>var a, b += 1, 2</code>: same as <code>var a += 1 ; var b += 2</code></li>
+<li><code>var a, b ++</code>: same as <code>var a, b += 1, 1</code></li>
+<li><code>var a, b //= b, a</code>: same as <code>var c = a ; var a //= b ; var b //= c ; del c</code></li>
+</ul>
+</div>
+<h2 id="access">Access</h2>
+<p>To access to a variable, you can:</p>
+<ul>
+<li>give the identifier: <code>foo</code> (returns the value of <code>foo</code>)</li>
+<li>use the special syntax: <code>foo ? bar ? a ? b</code> (returns the value of <code>foo</code> if it is defined, otherwise the value of <code>bar</code>... You can put as much <code>? identifier</code> as you want.) Then, you can put an expression at the end, such as <code>2</code>. In this case, the value returned will be <code>2</code> if none of the given identifiers is defined.</li>
+</ul>
+<h2 id="deletion">Deletion</h2>
+<p>If you don't need a variable anymore, you can delete it with the <code>del</code> keyword: <code>del identifier</code>.</p>
+<h2 id="examples">Examples</h2>
+<ul>
+<li><code>var foo = var bar = 12</code></li>
+<li><code>while foo != bar - 1 then var bar -= 1</code> (see <a href="link-to-loops.md#while">while loop</a>)</li>
+</ul>
+<h3 id="example-for-deletion">Example for deletion</h3>
+<p>Create a variable <code>a</code>, the delete it:</p>
+<pre><code class="language-nougshell">nougaro&gt; var a = 1
+1
+nougaro&gt; del a
+</code></pre>
+<p>But be careful! It can return errors:</p>
+<pre><code class="language-nougshell">nougaro&gt; var a = 1
+1
+nougaro&gt; del a
+nougaro&gt; del a
+Traceback (more recent call last):
+ In file &lt;stdin&gt;, line 1, in &lt;program&gt;:
+
+  del a
+      ^
+ NotDefinedError: a is not defined.
+</code></pre></div>
             </div>
         </div>
 
