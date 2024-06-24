@@ -15,7 +15,10 @@ Here is the list of the value types in Nougaro:
 !!! note
     Internal value types are base value (type: `BaseValue`) and default value (type: `DefaultValue`)
 
-!!! warning
+    !!! info "Added in 0.22.0-beta"
+        `DefaultValue` is new in 0.22.0-beta.
+
+!!! info "Changed in 0.22.0-beta"
     Before 0.22.0-beta, a distinction was made between `func` (user-defined function or function in a module written in Nougaro) and `built-in func` (built-in function or function in a module written in Python)
 
 ## Numbers
@@ -45,17 +48,18 @@ In boolean context, a string is true if it contains at least one character.
 ## Lists
 Lists are a succession of values.
 
-To declare a list, you can use brackets (`[]`), and put every value separated by a comma (`,`) inside.
+To declare a list, you can use brackets (`[]`), and put every value separated by a comma (`,`) inside. They may be 0 values.
+To create a list with elements from another list (and other elements), you can use this syntax: `[1, 2, *list_, 5]` (which is `[1, 2, 3, 4, 5]` if `list_` is `[3, 4]`).
 
-The only [operation](05operators.md) that can be used between two lists is multiplication, which extends the first list with the content of the second list.
+The only [operation](05operators.md) that can be used between two lists is multiplication, which extends the first list with the content of the second list. This can also be achieved using [`extend(list1, list2)`](link-to-built-in-functions#extend)
 
 Addition can be used between a list and any other value to add an element to the list.
 
-Substraction can be used between a list and an [integer](#numbers) (type `int`) to pop (i.e. delete) an element by index. This supports negative numbers.
+Substraction can be used between a list and an [integer](#numbers) (type `int`) to pop (i.e. delete) an element by index. This supports negative numbers. The returned value is the list after the pop. This can be achieved with [`pop(list, index)`](link-to-built-in-functions#pop), although this returns the popped value.
 
 Multiplication can be used between a list and an [integer](#numbers) (type `int`). For example, `[1, 2]*2` returns `[1, 2, 1, 2]`.
 
-Division can be used between a list and an [integer](#numbers) (type `int`) to get an element by index. This supports negative numbers.
+Division can be used between a list and an [integer](#numbers) (type `int`) to get an element by index. This supports negative numbers. This can be achieved using `list[index]` or [`get(list, index)`](link-to-built-in-functions#get).
 
 In boolean context, a list is true if it is not empty
 

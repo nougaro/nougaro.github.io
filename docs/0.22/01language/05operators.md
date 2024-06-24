@@ -52,11 +52,15 @@ They are exactly same as Python ones:
 !!! note
     the `in` keyword can check if:
 
-    * `int`, `float`, `str`, `list` or `NoneValue` is in another `str`
+    * `int`, `float`, `str`, `list`, `DefaultValue` or `NoneValue` is in a `str`
     * any value is in a `list`
+
+    !!! info "Added in 0.22.0-beta"
+        `DefaultValue` is new in 0.22.0-beta.
 
 ## Logical operators
 There is one logical operator that isn't here in Python. There is a list:
+
 | Nougaro   | Python    | Comments                        |
 |-----------|-----------|---------------------------------|
 | `and`     | `and`     | boolean 'and'                   |
