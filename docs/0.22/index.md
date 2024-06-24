@@ -10,5 +10,6 @@ This is the official documentation for Nougaro version 0.22.0-beta.
     * [Identifiers and keywords](01language/04identifiers_and_keywords.md)
     * [Operators](01language/05operators.md)
     * [Values](01language/06values.md)
+    * [Variables](01language/07variables.md)
 * Standard library reference: builtins, modules, …
 * Expanding Nougaro (for Python developers)
