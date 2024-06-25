@@ -9,6 +9,7 @@ The `noug_version` module is used to have better informations about the current 
 
 ## Constants
 Examples are given considering the version `3.14.15-rc.92`
+
 * `noug_version.major`: integer of the MAJOR version (`3`)
 * `noug_version.minor`: integer of the MINOR version (`14`)
 * `noug_version.patch`: integer of the PATCH version (`15`)

@@ -251,13 +251,15 @@
 <p>Nougaro uses <a href="https://semver.org">semantic versionning</a>. We recommend you to read the whole semver specification.</p>
 </div>
 <h2 id="constants">Constants</h2>
-<p>Examples are given considering the version <code>3.14.15-rc.92</code>
-* <code>noug_version.major</code>: integer of the MAJOR version (<code>3</code>)
-* <code>noug_version.minor</code>: integer of the MINOR version (<code>14</code>)
-* <code>noug_version.patch</code>: integer of the PATCH version (<code>15</code>)
-* <code>noug_version.phase</code>: string of the PHASE name (<code>"rc"</code>). Usually <code>alpha</code>, <code>beta</code>, <code>rc</code>, <code>stable</code>.
-* <code>noug_version.release_serial</code>: integer of the MINOR INDEV version (<code>92</code>). It resets when the phase switches back to <code>stable</code>. When the version is under the form <code>3.14.15-stable</code> or <code>0.16.0-beta</code>, this number is <code>0</code>.
-* <code>noug_version.version_list</code>: list under the form <code>[major, minor, patch, phase, release_serial]</code> (in our example: <code>[3, 14, 15, "rc", 92]</code>)</p>
+<p>Examples are given considering the version <code>3.14.15-rc.92</code></p>
+<ul>
+<li><code>noug_version.major</code>: integer of the MAJOR version (<code>3</code>)</li>
+<li><code>noug_version.minor</code>: integer of the MINOR version (<code>14</code>)</li>
+<li><code>noug_version.patch</code>: integer of the PATCH version (<code>15</code>)</li>
+<li><code>noug_version.phase</code>: string of the PHASE name (<code>"rc"</code>). Usually <code>alpha</code>, <code>beta</code>, <code>rc</code>, <code>stable</code>.</li>
+<li><code>noug_version.release_serial</code>: integer of the MINOR INDEV version (<code>92</code>). It resets when the phase switches back to <code>stable</code>. When the version is under the form <code>3.14.15-stable</code> or <code>0.16.0-beta</code>, this number is <code>0</code>.</li>
+<li><code>noug_version.version_list</code>: list under the form <code>[major, minor, patch, phase, release_serial]</code> (in our example: <code>[3, 14, 15, "rc", 92]</code>)</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Changed in 0.19.0 and 0.20.0</p>
 <p><code>noug_version.release_serial</code> is the new name for <code>noug_version.phase_minor</code> in 0.19.0-beta. <code>noug_version.phase_minor</code> has been removed in 0.20.0-beta.</p>

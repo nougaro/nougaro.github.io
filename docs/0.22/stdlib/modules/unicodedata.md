@@ -1,5 +1,5 @@
 # Unicodedata
-!!! note "credit"
+!!! note "Credits"
     This is massively copied from [python documentation of unicodedata](https://docs.python.org/3/library/unicodedata.html), under the [Python Software Foundation License Version 2](https://www.python.org/download/releases/2.0/license/). © [Copyright](https://docs.python.org/3/copyright.html) 2001-2023, Python Software Foundation. This text has not been edited.
 
 The `unicodedata` module can be imported with the statement `import unicodedata`.
