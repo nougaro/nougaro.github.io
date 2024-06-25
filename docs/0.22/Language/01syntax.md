@@ -56,7 +56,7 @@ Multi-line comments can be nested:
 ```
 
 ### NOUGAROIGNORE comments
-!! note ""
+!!! note ""
     Added in 0.22.0-beta
 
 These comments start and end with `..NOUGAROIGNORE` or `.. NOUGAROIGNORE`, where `..` is any character among `#@/%!$;`. There should be nothing else on the NOUGAROIGNORE line.
