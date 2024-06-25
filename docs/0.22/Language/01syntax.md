@@ -55,6 +55,14 @@ Multi-line comments can be nested:
 */
 ```
 
+### NOUGAROIGNORE comments
+!! note ""
+    Added in 0.22.0-beta
+
+These comments start and end with `..NOUGAROIGNORE` or `.. NOUGAROIGNORE`, where `..` is any character among `#@/%!$;`. There should be nothing else on the NOUGAROIGNORE line.
+
+Example: file [`examples/fizzbuzz.c.py.noug`](https://github.com/jd-develop/nougaro/blob/main/examples/fizzbuzz.c.py.noug) (polyglott file using C comments, Python docstrings and Nougaro NOUGAROIGNORE comments).
+
 ## Lines
 Line are separated by a newline or a semicolon (`;`).
 
