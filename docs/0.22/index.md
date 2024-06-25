@@ -15,3 +15,4 @@ This is the official documentation for Nougaro version 0.22.0-beta.
 * Standard library reference: builtins, modules, …
 * Expanding Nougaro (for Python developers)
     * [Write libraries for Nougaro](Expanding/Write-libs.md)
+* [Internals](internals.md)

@@ -4,10 +4,10 @@ There is the list of test keywords in Nougaro :
 
 | Nougaro   | Python    |
 |-----------|-----------|
-| if        | if        |
-| then      | :         |
-| elif      | elif      |
-| else      | else      |
+| `if`      | `if`      |
+| `then`    | `:`       |
+| `elif`    | `elif`    |
+| `else`    | `else`    |
 
 ## Syntax
 
