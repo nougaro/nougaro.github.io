@@ -8,7 +8,7 @@
         <meta name="author" content="Jean Dubois">
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Metas - Nougaro Documentation</title>
+        <title>Dollar-print syntax - Nougaro Documentation</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../css/brands.min.css" rel="stylesheet">
@@ -124,11 +124,11 @@
 </li>
             
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Metas</a>
+    <a href="../15metas/" class="dropdown-item">Metas</a>
 </li>
             
 <li>
-    <a href="../16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Dollar-print syntax</a>
 </li>
     </ul>
   </li>
@@ -203,12 +203,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../14import/" class="nav-link">
+                                <a rel="prev" href="../15metas/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../16dollar_print/" class="nav-link">
+                                <a rel="next" href="../../stdlib/01builtin-variables/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -230,28 +230,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#metas" class="nav-link">Metas</a>
+            <li class="nav-item" data-bs-level="1"><a href="#dollar-print-syntax" class="nav-link">Dollar-print syntax</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#appendnoneonbreak" class="nav-link">appendNoneOnBreak</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#appendnoneoncontinue" class="nav-link">appendNoneOnContinue</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#legacyabs" class="nav-link">legacyAbs</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#nbspbetweenfrenchguillemets" class="nav-link">nbspBetweenFrenchGuillemets</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#setthetestvalueto" class="nav-link">setTheTestValueTo</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -259,47 +239,12 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="metas">Metas</h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Added in 0.19.0-beta</p>
-</div>
-<p>Metas are a way to use other (or old) functionnalities in Nougaro.
-They’re used by adding <code>@meta metaName</code> or <code>@meta metaName value</code> at the beginning of a file or in an interactive shell.
-Note that, instead of <code>@</code>, you can use any of those prefixes: <code>#@</code>, <code>%@</code>, <code>@@</code>, <code>-@</code>, <code>$@</code>.</p>
-<h2 id="appendnoneonbreak"><code>appendNoneOnBreak</code></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Added in 0.20.0-beta</p>
-</div>
-<p>If enabled, this meta forces a <a href="../09loops/#break-continue"><code>break</code></a> statement to append <a href="../06values/#none"><code>None</code></a> to the <a href="../06values/#lists">list</a> returned by the <a href="../09loops/">loop</a>.</p>
-<h2 id="appendnoneoncontinue"><code>appendNoneOnContinue</code></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Added in 0.20.0-beta</p>
-</div>
-<p>If enabled, this meta forces a <a href="../09loops/#break-continue"><code>continue</code></a> statement to append <a href="../06values/#none"><code>None</code></a> to the <a href="../06values/#lists">list</a> returned by the <a href="../09loops/">loop</a>.</p>
-<h2 id="legacyabs"><code>legacyAbs</code></h2>
-<p>The <code>legacyAbs</code> meta lets you use the old syntax (in the <code>prototype-1</code> version) for absolute value, which is <code>|...|</code>. However, this meta disables the bitwise or <a href="../05operators/">operation</a>.</p>
-<p>Example:</p>
-<pre><code class="language-nougaro">@meta legacyAbs
-print(|-1|)  # 1
-var a = 12
-print(|-a|)  # 12
+<h1 id="dollar-print-syntax">Dollar-print syntax</h1>
+<p>The dollar-print syntax is the following:</p>
+<pre><code class="language-nougaro">$indentifier
 </code></pre>
-<h2 id="nbspbetweenfrenchguillemets"><code>nbspBetweenFrenchGuillemets</code></h2>
-<p>The <code>nbspBetweenFrenchGuillemets</code> meta requires you, if you use the french <a href="../03string_literals/">string</a> quotes (<code>«»</code>), to put a no-break space (or a narrow no-break space) after the <code>«</code> and before the <code>»</code>.</p>
-<p>Example:</p>
-<pre><code class="language-nougaro">@meta nbspBetweenFrenchGuillemets
-print(« hello, world »)  /* hello, world
-                          * note that the quotes aren’t regular spaces
-                          */
-</code></pre>
-<h2 id="setthetestvalueto"><code>setTheTestValueTo</code></h2>
-<ul>
-<li>Sets <code>__the_test_value__</code> to the <a href="../06values/#strings">str</a> value given in the meta value</li>
-<li>If no value is given, it sets it to <a href="../06values/#none"><code>None</code></a>.</li>
-</ul></div>
+<p>It checks if <code>identifier</code> exists, and if so, it prits it. Otherwise, it prints <code>$identifier</code>.</p>
+<p>If no identifier is given, it prints <code>$</code>.</p></div>
             </div>
         </div>
 

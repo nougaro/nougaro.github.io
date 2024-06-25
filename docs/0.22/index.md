@@ -19,6 +19,7 @@ This is the official documentation for Nougaro version 0.22.0-beta.
     * [Read and write in files](Language/13read_and_write_files.md)
     * [Import and export](Language/14import.md)
     * [Metas](Language/15metas.md)
+    * [Dollar-print](Language/16dollar_print.md)
 * Standard library reference: builtins, modules, …
     * [Built-in variables](stdlib/01builtin-variables.md)
     * [Built-in functions](stdlib/02builtin-functions.md)
