@@ -8,7 +8,7 @@
         <meta name="author" content="Jean Dubois">
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Variables - Nougaro Documentation</title>
+        <title>Test statements - Nougaro Documentation</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../css/brands.min.css" rel="stylesheet">
@@ -88,11 +88,11 @@
 </li>
             
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Variables</a>
+    <a href="../07variables/" class="dropdown-item">Variables</a>
 </li>
             
 <li>
-    <a href="../08tests/" class="dropdown-item">Test statements</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Test statements</a>
 </li>
     </ul>
   </li>
@@ -121,12 +121,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../06values/" class="nav-link">
+                                <a rel="prev" href="../07variables/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../08tests/" class="nav-link">
+                                <a rel="next" href="../../stdlib/01builtin-variables/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -148,21 +148,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#variables" class="nav-link">Variables</a>
+            <li class="nav-item" data-bs-level="1"><a href="#test-statements" class="nav-link">Test statements</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#definition" class="nav-link">Definition</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#edition" class="nav-link">Edition</a>
+            <li class="nav-item" data-bs-level="2"><a href="#list" class="nav-link">List</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#access" class="nav-link">Access</a>
+            <li class="nav-item" data-bs-level="2"><a href="#syntax" class="nav-link">Syntax</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#deletion" class="nav-link">Deletion</a>
+            <li class="nav-item" data-bs-level="2"><a href="#behaviour" class="nav-link">Behaviour</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#logicals-constants" class="nav-link">Logicals constants</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#conditions" class="nav-link">Conditions</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -177,80 +181,227 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="variables">Variables</h1>
-<h2 id="definition">Definition</h2>
-<p>Use the syntax <code>var identifier = value</code> (see <a href="../04identifiers_and_keywords/">identifiers</a> and <a href="../06values/">values</a>) to assign the value <code>value</code> to the variable named <code>identifier</code>. The expression <code>var identifier = value</code> returns <code>value</code>.</p>
-<p>To assign the same value to multiple variables, you can use <code>var variable1 = var variable2 = var variable3 = value</code>.</p>
-<p>If you want to assign multiple values to multiple variables, you can use <code>var variable1, variable2 = value1, value2</code>. This can be used to swap variables: <code>var a, b = b, a</code>.</p>
-<p>Except for <a href="../04identifiers_and_keywords/#keywords">keywords</a>, there are no prohibited variable name.</p>
-<h2 id="edition">Edition</h2>
-<p>You can edit variables by multiple ways:</p>
+<h1 id="test-statements">Test statements</h1>
+<h2 id="list">List</h2>
+<p>There is the list of test keywords in Nougaro :</p>
+<table>
+<thead>
+<tr>
+<th>Nougaro</th>
+<th>Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>if</td>
+<td>if</td>
+</tr>
+<tr>
+<td>then</td>
+<td>:</td>
+</tr>
+<tr>
+<td>elif</td>
+<td>elif</td>
+</tr>
+<tr>
+<td>else</td>
+<td>else</td>
+</tr>
+</tbody>
+</table>
+<h2 id="syntax">Syntax</h2>
 <ul>
-<li><code>var a = value</code>;</li>
-<li><code>var a += value</code>: same as <code>var a = a + value</code>;</li>
-<li><code>var a ++</code>: same as <code>var a += 1</code>;</li>
-<li><code>var a -= value</code>: same as <code>var a = a - value</code>;</li>
-<li><code>var a --</code>: same as <code>var a -= 1</code>;</li>
-<li><code>var a *= value</code>: same as <code>var a = a * value</code>;</li>
-<li><code>var a /= value</code>: same as <code>var a = a / value</code>;</li>
-<li><code>var a ^= value</code>: same as <code>var a = a ^ value</code>;</li>
-<li><code>var a //= value</code>: same as <code>var a = a // value</code>;</li>
-<li><code>var a %= value</code>: same as <code>var a = a % value</code>;</li>
-<li><code>var a ||= value</code>: same as <code>var a = a or value</code>;</li>
-<li><code>var a &amp;&amp;= value</code>: same as <code>var a = a and value</code>;</li>
-<li><code>var a ^^^= value</code>: same as <code>var a = a xor value</code>;</li>
-<li><code>var a |= value</code>: same as <code>var a = a | value</code>;</li>
-<li><code>var a &amp;= value</code>: same as <code>var a = a &amp; value</code>;</li>
-<li><code>var a ^^= value</code>: same as <code>var a = a ^^ value</code>;</li>
-<li><code>var a === value</code>: same as <code>var a = a == value</code>;</li>
-<li><code>var a &lt;== value</code>: same as <code>var a = a &lt;= value</code>;</li>
-<li><code>var a &lt;&lt;= value</code>: same as <code>var a = a &lt; value</code>;</li>
-<li><code>var a &gt;== value</code>: same as <code>var a = a &gt;= value</code>;</li>
-<li><code>var a &gt;&gt;= value</code>: same as <code>var a = a &gt; value</code>.</li>
+<li><code>if &lt;cond&gt; then &lt;expr&gt;</code></li>
+<li><code>if &lt;cond&gt; then &lt;expr&gt; else &lt;expr&gt;</code></li>
+<li><code>if &lt;cond&gt; then &lt;expr&gt; elif &lt;cond&gt; then &lt;expr&gt;</code></li>
+<li><code>if &lt;cond&gt; then &lt;expr&gt; elif &lt;cond&gt; then &lt;expr&gt; else &lt;expr&gt;</code></li>
+<li><code>if &lt;cond&gt; then &lt;expr&gt; elif &lt;cond&gt; then &lt;expr&gt; elif &lt;cond&gt; then &lt;expr&gt;</code></li>
+<li><code>if &lt;cond&gt; then &lt;expr&gt; elif &lt;cond&gt; then &lt;expr&gt; elif &lt;cond&gt; then &lt;expr&gt; else &lt;expr&gt;</code></li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>For details about these operators, see <a href="../05operators/">this page</a>.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can also edit multiple variables at the same time:</p>
-<ul>
-<li><code>var a, b += 1, 2</code>: same as <code>var a += 1 ; var b += 2</code></li>
-<li><code>var a, b ++</code>: same as <code>var a, b += 1, 1</code></li>
-<li><code>var a, b //= b, a</code>: same as <code>var c = a ; var a //= b ; var b //= c ; del c</code></li>
-</ul>
-</div>
-<h2 id="access">Access</h2>
-<p>To access to a variable, you can:</p>
-<ul>
-<li>give the identifier: <code>foo</code> (returns the value of <code>foo</code>)</li>
-<li>use the special syntax: <code>foo ? bar ? a ? b</code> (returns the value of <code>foo</code> if it is defined, otherwise the value of <code>bar</code>... You can put as much <code>? identifier</code> as you want.) Then, you can put an expression at the end, such as <code>2</code>. In this case, the value returned will be <code>2</code> if none of the given identifiers is defined.</li>
-</ul>
-<h2 id="deletion">Deletion</h2>
-<p>If you don't need a variable anymore, you can delete it with the <code>del</code> keyword: <code>del identifier</code>.</p>
+<p>etc.</p>
+<p>Multi-line :</p>
+<pre><code class="language-nougaro">if &lt;cond&gt; then
+    &lt;some code here&gt;
+end
+</code></pre>
+<pre><code class="language-nougaro">if &lt;cond&gt; then
+    &lt;some code here&gt;
+else
+    &lt;some other code&gt;
+end
+</code></pre>
+<pre><code class="language-nougaro">if &lt;cond&gt; then
+    &lt;some code here&gt;
+else
+    &lt;some other code&gt;
+end
+</code></pre>
+<p>etc.</p>
+<h2 id="behaviour">Behaviour</h2>
+<p>The condition is checked. If it is true, the expression in the <code>if</code> branch is executed. Otherwise, Nougaro checks for an <code>elif</code> branch. If it exists, it re-checks the condition, etc. If none of the conditions is true and that there is an <code>else</code> branch, the expression in the <code>else</code> branch is executed. If there is no <code>else</code> branch, nothing is executed.</p>
+<h2 id="logicals-constants">Logicals constants</h2>
+<table>
+<thead>
+<tr>
+<th>Nougaro</th>
+<th>Python</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td>True</td>
+<td>equals to 1</td>
+</tr>
+<tr>
+<td>False</td>
+<td>False</td>
+<td>equals to 0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conditions">Conditions</h2>
+<p>Conditions can be any <a href="../06values/">value</a>, which will be interpreted in its boolean context.</p>
+<p>Conditions can also use <a href="../05operators/#test-operators">test operators</a>. For instance, <code>a == b</code> checks if <code>a</code> is equal to <code>b</code>, where <code>a &lt; b</code> checks if <code>a</code> is strictly less than <code>b</code>. You can chain multiple operators: <code>a == b &lt;= c != d</code> checks if <code>a</code> is equal to <code>b</code> and if <code>b</code> is less than or equal to <code>c</code> and if <code>c</code> is different from <code>d</code>.</p>
+<p>Multiple conditions can be combined with <a href="../05operators/#logical-operators">boolean/logical operators</a>. Here is the truth table of the logical operators:</p>
+<h3 id="and"><code>and</code></h3>
+<table>
+<thead>
+<tr>
+<th><code>a</code></th>
+<th><code>b</code></th>
+<th><code>a and b</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="or"><code>or</code></h3>
+<table>
+<thead>
+<tr>
+<th><code>a</code></th>
+<th><code>b</code></th>
+<th><code>a or b</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="xor"><code>xor</code></h3>
+<table>
+<thead>
+<tr>
+<th><code>a</code></th>
+<th><code>b</code></th>
+<th><code>a xor b</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="not"><code>not</code></h3>
+<table>
+<thead>
+<tr>
+<th><code>a</code></th>
+<th><code>not a</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>There is no priority amongst boolean operators, so for instance <code>a and b or c xor d</code> gives <code>((a and b) or c) xor d</code>.</p>
+<p>After interpretation, a condition is always <code>0</code> or <code>1</code> (<code>False</code> or <code>True</code>).</p>
 <h2 id="examples">Examples</h2>
 <ul>
-<li><code>var foo = var bar = 12</code></li>
-<li><code>while foo != bar - 1 then var bar -= 1</code> (see <a href="link-to-loops.md#while">while loop</a>)</li>
+<li><code>if foo == bar then var foo = 12</code></li>
+<li><code>if bar != foo then var foo = 12 else var bar = 13</code>
+*</li>
 </ul>
-<h3 id="example-for-deletion">Example for deletion</h3>
-<p>Create a variable <code>a</code>, the delete it:</p>
-<pre><code class="language-nougshell">nougaro&gt; var a = 1
-1
-nougaro&gt; del a
+<pre><code class="language-nougaro">if foo &gt; bar and 12 &lt;= variable then
+    var bar = variable
+elif foo &lt; bar xor foo &gt; variable then
+    var foo = 3
+end
 </code></pre>
-<p>But be careful! It can return errors:</p>
-<pre><code class="language-nougshell">nougaro&gt; var a = 1
-1
-nougaro&gt; del a
-nougaro&gt; del a
-Traceback (more recent call last):
- In file &lt;stdin&gt;, line 1, in &lt;program&gt;:
-
-  del a
-      ^
- NotDefinedError: a is not defined.
+<pre><code class="language-nougaro">if foo &gt; bar and 12 &lt;= variable then
+    var bar = variable
+elif foo &lt; bar xor foo &gt; variable then
+    var foo = 3
+else
+    var foo = 12
+end
 </code></pre></div>
             </div>
         </div>

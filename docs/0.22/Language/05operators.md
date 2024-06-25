@@ -61,9 +61,9 @@ They are exactly same as Python ones:
 ## Logical operators
 There is one logical operator that isn't here in Python. There is a list:
 
-| Nougaro   | Python    | Comments                        |
-|-----------|-----------|---------------------------------|
-| `and`     | `and`     | boolean 'and'                   |
-| `or`      | `or`      | boolean 'or'                    |
-| `xor`     | `^`       | boolean 'exclusive or'          |
-| `not`     | `not`     | boolean 'not' (inverter)        |
+| Nougaro   | Python    | Comments                                  |
+|-----------|-----------|-------------------------------------------|
+| `and`     | `and`     | boolean 'and' (binary operator)           |
+| `or`      | `or`      | boolean 'or'  (binary operator)           |
+| `xor`     | `^`       | boolean 'exclusive or' (binary operator)  |
+| `not`     | `not`     | boolean 'not' (inverter) (unary operator) |
