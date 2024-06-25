@@ -11,7 +11,7 @@ This is the official documentation for Nougaro version 0.22.0-beta.
     * [Operators](Language/05operators.md)
     * [Values](Language/06values.md)
     * [Variables](Language/07variables.md)
-    * [Tests (if statement)](Language/08tests.md)
+    * [Tests (`if` statement, `assert`)](Language/08tests.md)
     * [Loops](Language/09loops.md)
     * [Functions](Language/10functions.md)
     * [Attributes](Language/11attributes.md)
