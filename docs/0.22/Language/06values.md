@@ -7,7 +7,7 @@ Here is the list of the value types in Nougaro:
 * str ([strings](#strings)). Internal type: `str`
 * list ([lists](#lists)). Internal type: `list`
 * NoneType ([None](#none)). Internal type: `NoneValue`
-* [function](10functions.md). Internal type: `func`.
+* [function](10functions.md). Internal type: `func` or `method`.
 * [module](#modules). Internal type: `module`
 * [constructor](11classes.md#constructor-value). Internal type: `constructor`
 * [object](11classes.md#object). Internal type: depends on the class’ name, and it is `<class>` if the class has no name.
@@ -19,7 +19,7 @@ Here is the list of the value types in Nougaro:
         `DefaultValue` is new in 0.22.0-beta.
 
 !!! info "Changed in 0.22.0-beta"
-    Before 0.22.0-beta, a distinction was made between `func` (user-defined function or function in a module written in Nougaro) and `built-in func` (built-in function or function in a module written in Python)
+    Before 0.22.0-beta, a distinction was made between `func` (user-defined function or function in a module written in Nougaro) and `built-in func` (built-in function or function in a module written in Python).
 
 ## Numbers
 Numbers represents real-life numbers. The two types of numbers are `int` and `float`.
