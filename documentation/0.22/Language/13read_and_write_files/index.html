@@ -8,7 +8,7 @@
         <meta name="author" content="Jean Dubois">
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Metas - Nougaro Documentation</title>
+        <title>Read and write in files - Nougaro Documentation</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../css/brands.min.css" rel="stylesheet">
@@ -108,19 +108,23 @@
 </li>
             
 <li>
-    <a href="../11classes/" class="dropdown-item">Classes and objects</a>
+    <a href="../11attributes/" class="dropdown-item">Attributes</a>
 </li>
             
 <li>
-    <a href="../12read_and_write_files/" class="dropdown-item">Read and write in files</a>
+    <a href="../12classes/" class="dropdown-item">Classes and objects</a>
 </li>
             
 <li>
-    <a href="../13import/" class="dropdown-item">Import and export</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Read and write in files</a>
 </li>
             
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Metas</a>
+    <a href="../14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../15metas/" class="dropdown-item">Metas</a>
 </li>
     </ul>
   </li>
@@ -159,12 +163,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../13import/" class="nav-link">
+                                <a rel="prev" href="../12classes/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../../stdlib/01builtin-variables/" class="nav-link">
+                                <a rel="next" href="../14import/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -186,25 +190,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#metas" class="nav-link">Metas</a>
+            <li class="nav-item" data-bs-level="1"><a href="#read-and-write-in-files" class="nav-link">Read and write in files</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#appendnoneonbreak" class="nav-link">appendNoneOnBreak</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#appendnoneoncontinue" class="nav-link">appendNoneOnContinue</a>
+            <li class="nav-item" data-bs-level="2"><a href="#read" class="nav-link">Read</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#legacyabs" class="nav-link">legacyAbs</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#nbspbetweenfrenchguillemets" class="nav-link">nbspBetweenFrenchGuillemets</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#setthetestvalueto" class="nav-link">setTheTestValueTo</a>
+            <li class="nav-item" data-bs-level="2"><a href="#write" class="nav-link">Write</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -215,47 +207,16 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="metas">Metas</h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Added in 0.19.0-beta</p>
-</div>
-<p>Metas are a way to use other (or old) functionnalities in Nougaro.
-They’re used by adding <code>@meta metaName</code> or <code>@meta metaName value</code> at the beginning of a file or in an interactive shell.
-Note that, instead of <code>@</code>, you can use any of those prefixes: <code>#@</code>, <code>%@</code>, <code>@@</code>, <code>-@</code>, <code>$@</code>.</p>
-<h2 id="appendnoneonbreak"><code>appendNoneOnBreak</code></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Added in 0.20.0-beta</p>
-</div>
-<p>If enabled, this meta forces a <a href="../09loops/#break-continue"><code>break</code></a> statement to append <a href="../06values/#none"><code>None</code></a> to the <a href="../06values/#lists">list</a> returned by the <a href="../09loops/">loop</a>.</p>
-<h2 id="appendnoneoncontinue"><code>appendNoneOnContinue</code></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Added in 0.20.0-beta</p>
-</div>
-<p>If enabled, this meta forces a <a href="../09loops/#break-continue"><code>continue</code></a> statement to append <a href="../06values/#none"><code>None</code></a> to the <a href="../06values/#lists">list</a> returned by the <a href="../09loops/">loop</a>.</p>
-<h2 id="legacyabs"><code>legacyAbs</code></h2>
-<p>The <code>legacyAbs</code> meta lets you use the old syntax (in the <code>prototype-1</code> version) for absolute value, which is <code>|...|</code>. However, this meta disables the bitwise or <a href="../05operators/">operation</a>.</p>
-<p>Example:</p>
-<pre><code class="language-nougaro">@meta legacyAbs
-print(|-1|)  # 1
-var a = 12
-print(|-a|)  # 12
-</code></pre>
-<h2 id="nbspbetweenfrenchguillemets"><code>nbspBetweenFrenchGuillemets</code></h2>
-<p>The <code>nbspBetweenFrenchGuillemets</code> meta requires you, if you use the french <a href="../03string_literals/">string</a> quotes (<code>«»</code>), to put a no-break space (or a narrow no-break space) after the <code>«</code> and before the <code>»</code>.</p>
-<p>Example:</p>
-<pre><code class="language-nougaro">@meta nbspBetweenFrenchGuillemets
-print(« hello, world »)  /* hello, world
-                          * note that the quotes aren’t regular spaces
-                          */
-</code></pre>
-<h2 id="setthetestvalueto"><code>setTheTestValueTo</code></h2>
-<ul>
-<li>Sets <code>__the_test_value__</code> to the <a href="../06values/#strings">str</a> value given in the meta value</li>
-<li>If no value is given, it sets it to <a href="../06values/#none"><code>None</code></a>.</li>
-</ul></div>
+<h1 id="read-and-write-in-files">Read and write in files</h1>
+<h2 id="read">Read</h2>
+<p>To read a file, use <code>read "path/to/file.ext"</code> or <code>read "path/to/file" line_number</code>. You can assign this value to a variable by using <code>read "file" &gt;&gt; identifier line_number</code> or <code>var identifier = read "file" line_number</code>. <code>line_number</code> is an <a href="../06values/#numbers">integer</a> and is optional.</p>
+<p>You can use <code>"&lt;stdin&gt;"</code> as file name to get a line of input from the user. It is exactly like the <a href="../../stdlib/02builtin-functions/#input"><code>input</code> built-in function</a>.</p>
+<p>The <code>read</code> expression returns the content of the file (or of the line).</p>
+<h2 id="write">Write</h2>
+<p>To write in a file, use <code>write "sometext" &gt;&gt; "path/to/file.ext" line_number</code>. <code>line_number</code> is an integer and is optional.</p>
+<p>To overwrite the content when you write, replace <code>&gt;&gt;</code> by <code>!&gt;&gt;</code>.</p>
+<p>You can use <code>"&lt;stdout&gt;"</code> as file name to print a text in the console. It is exactly like the <a href="../../stdlib/02builtin-functions/#print"><code>print</code> built-in function</a>. If you overwrite the contents of <code>&lt;stdout&gt;</code>, the console is cleared (exactly like the <a href="../../stdlib/02builtin-functions/#clear"><code>clear</code> built-in function</a>.)</p>
+<p>The <code>write</code> expression returns the text that was wrote in the file.</p></div>
             </div>
         </div>
 

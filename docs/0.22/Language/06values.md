@@ -7,10 +7,10 @@ Here is the list of the value types in Nougaro:
 * str ([strings](#strings)). Internal type: `str`
 * list ([lists](#lists)). Internal type: `list`
 * NoneType ([None](#none)). Internal type: `NoneValue`
-* [function](10functions.md). Internal type: `func` or `method`.
+* [function](10functions.md). Internal type: `func` or [`method`](12classes.md#methods).
 * [module](#modules). Internal type: `module`
-* [constructor](11classes.md#constructor-value). Internal type: `constructor`
-* [object](11classes.md#object). Internal type: depends on the class’ name, and it is `<class>` if the class has no name.
+* [constructor](12classes.md#constructor-value). Internal type: `constructor`
+* [object](12classes.md#object). Internal type: depends on the class’ name, and it is `<class>` if the class has no name.
 
 !!! note
     Internal value types are base value (type: `BaseValue`) and default value (type: `DefaultValue`)
@@ -59,7 +59,7 @@ Substraction can be used between a list and an [integer](#numbers) (type `int`) 
 
 Multiplication can be used between a list and an [integer](#numbers) (type `int`). For example, `[1, 2]*2` returns `[1, 2, 1, 2]`.
 
-Division can be used between a list and an [integer](#numbers) (type `int`) to get an element by index. This supports negative numbers. This can be achieved using `list[index]` or [`get(list, index)`](../stdlib/02builtin-functions.md#get).
+Division can be used between a list and an [integer](#numbers) (type `int`) to get an element by index. This supports negative numbers. This can be achieved using `list(index)` or [`get(list, index)`](../stdlib/02builtin-functions.md#get).
 
 In boolean context, a list is true if it is not empty
 
@@ -73,7 +73,7 @@ No [operation](05operators.md) can be used on `None`.
 In boolean context, `None` is false.
 
 ## Modules
-A module is a value containing various useful functions and constants. A list of modules can be found [here](../stdlib/modules/index.md). Importing modules is detailed [here](13import.md). The procedure to create your own module is detailed [here](../Expanding/Write-libs.md).
+A module is a value containing various useful functions and constants. A list of modules can be found [here](../stdlib/modules/index.md). Importing modules is detailed [here](14import.md). The procedure to create your own module is detailed [here](../Expanding/Write-libs.md).
 
 No [operation](05operators.md) can be used on modules.
 

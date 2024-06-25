@@ -88,7 +88,7 @@ You can label a loop using `for:label`, `while:label` or `do:label`. Labels are 
 
 ## `break`, `continue`
 !!! note "Changed in 0.20.0-beta"
-    Prior to 0.20.0-beta, `break` and `continue` did append [`None`](06values.md#none) to the return list. To re-enable this behaviour, you can enable `appendNoneOnBreak` or `appendNoneOnContinue` [metas](14metas.md).
+    Prior to 0.20.0-beta, `break` and `continue` did append [`None`](06values.md#none) to the return list. To re-enable this behaviour, you can enable `appendNoneOnBreak` or `appendNoneOnContinue` [metas](15metas.md).
 !!! note "Added in 0.20.0-beta"
     Labels were added in 0.20.0-beta.
 

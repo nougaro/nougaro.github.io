@@ -108,19 +108,23 @@
 </li>
             
 <li>
+    <a href="../11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
     <a href="./" class="dropdown-item active" aria-current="page">Classes and objects</a>
 </li>
             
 <li>
-    <a href="../12read_and_write_files/" class="dropdown-item">Read and write in files</a>
+    <a href="../13read_and_write_files/" class="dropdown-item">Read and write in files</a>
 </li>
             
 <li>
-    <a href="../13import/" class="dropdown-item">Import and export</a>
+    <a href="../14import/" class="dropdown-item">Import and export</a>
 </li>
             
 <li>
-    <a href="../14metas/" class="dropdown-item">Metas</a>
+    <a href="../15metas/" class="dropdown-item">Metas</a>
 </li>
     </ul>
   </li>
@@ -159,12 +163,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../10functions/" class="nav-link">
+                                <a rel="prev" href="../11attributes/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../12read_and_write_files/" class="nav-link">
+                                <a rel="next" href="../13read_and_write_files/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -196,6 +200,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#example" class="nav-link">Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -204,9 +212,74 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="classes-and-objects">Classes and objects</h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Added in 0.15-beta</p>
+</div>
+<p>Nougaro is an object-oriented programming language, which means you can create objects using <strong>classes</strong>.</p>
 <h2 id="class-definition">Class definition</h2>
+<p>To define a class, use this syntax:</p>
+<pre><code class="language-nougaro">class Name
+    ...
+end
+</code></pre>
+<p>To create <a href="../11attributes/">attributes</a>, just use the basic <code>var id = value</code> syntax:</p>
+<pre><code class="language-nougaro">class Name
+    var a = 3
+    var b = 1
+end
+</code></pre>
+<p>To create <a href="#methods">methods</a>, just use the basic <a href="../10functions/#definition"><code>def</code> syntax</a>. Access to object’s <a href="../11attributes/">attributes</a> with <code>this</code>:</p>
+<pre><code class="language-nougaro">class Name
+    var a = 3
+    var b = 1
+
+    def increment_b(by)
+        var this.b += 1
+    end
+
+    def get_a()
+        return this.a
+    end
+end
+</code></pre>
+<p>Methods are <a href="../11attributes/">attributes</a> themselves.</p>
+<h3 id="methods">Methods</h3>
+<p>Internal type: <code>method</code>.</p>
+<p>No <a href="../05operators/">operation</a> can be used on methods.</p>
+<p>Methods are true in boolean context.</p>
+<div class="admonition note">
+<p class="admonition-title">Changed in 0.22.0-beta</p>
+<p>Prior to 0.22.0-beta, methods were false in boolean context.</p>
+</div>
 <h3 id="constructor-value">Constructor value</h3>
-<h2 id="object">Object</h2></div>
+<p>Internal type: <code>constructor</code>.</p>
+<p>No <a href="../05operators/">operation</a> can be used on constructors.</p>
+<p>Constructors are false in boolean context.</p>
+<h3 id="inheritance">Inheritance</h3>
+<p>To inherit from another class, use the <code>class Name(Iherit)</code> syntax:</p>
+<pre><code class="language-nougaro">class ChildOfName(Name)
+    var c = 3
+
+    def set_c(new_value)
+        var this.c = new_value
+    end
+
+    def a_plus_b_plus_c()
+        return this.get_a() + this.b + this.c
+    end
+end
+</code></pre>
+<h2 id="object">Object</h2>
+<p>Classes can be instanced into objects by calling them.</p>
+<p>Example:</p>
+<pre><code class="language-nougaro">var instance = Name()
+
+instance.increment_b(10)
+assert instance.b == 11
+</code></pre>
+<h2 id="example">Example</h2>
+<p>See the <code>stack.noug</code> example located in <code>./examples/</code> in the main Nougaro repository.</p></div>
             </div>
         </div>
 

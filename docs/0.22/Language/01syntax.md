@@ -55,6 +55,16 @@ Multi-line comments can be nested:
 */
 ```
 
+## Lines
+Line are separated by a newline or a semicolon (`;`).
+
+```nougaro
+a
+b
+```
+
+is equivalent to `a ; b`.
+
 ## Line joining
 If you don’t have enough space on your line, you can join two “real lines” to form a Nougaro line, using a backspace.
 

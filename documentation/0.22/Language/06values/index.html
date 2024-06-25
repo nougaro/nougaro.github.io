@@ -108,19 +108,23 @@
 </li>
             
 <li>
-    <a href="../11classes/" class="dropdown-item">Classes and objects</a>
+    <a href="../11attributes/" class="dropdown-item">Attributes</a>
 </li>
             
 <li>
-    <a href="../12read_and_write_files/" class="dropdown-item">Read and write in files</a>
+    <a href="../12classes/" class="dropdown-item">Classes and objects</a>
 </li>
             
 <li>
-    <a href="../13import/" class="dropdown-item">Import and export</a>
+    <a href="../13read_and_write_files/" class="dropdown-item">Read and write in files</a>
 </li>
             
 <li>
-    <a href="../14metas/" class="dropdown-item">Metas</a>
+    <a href="../14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../15metas/" class="dropdown-item">Metas</a>
 </li>
     </ul>
   </li>
@@ -223,10 +227,10 @@
 <li>str (<a href="#strings">strings</a>). Internal type: <code>str</code></li>
 <li>list (<a href="#lists">lists</a>). Internal type: <code>list</code></li>
 <li>NoneType (<a href="#none">None</a>). Internal type: <code>NoneValue</code></li>
-<li><a href="../10functions/">function</a>. Internal type: <code>func</code> or <code>method</code>.</li>
+<li><a href="../10functions/">function</a>. Internal type: <code>func</code> or <a href="../12classes/#methods"><code>method</code></a>.</li>
 <li><a href="#modules">module</a>. Internal type: <code>module</code></li>
-<li><a href="../11classes/#constructor-value">constructor</a>. Internal type: <code>constructor</code></li>
-<li><a href="../11classes/#object">object</a>. Internal type: depends on the class’ name, and it is <code>&lt;class&gt;</code> if the class has no name.</li>
+<li><a href="../12classes/#constructor-value">constructor</a>. Internal type: <code>constructor</code></li>
+<li><a href="../12classes/#object">object</a>. Internal type: depends on the class’ name, and it is <code>&lt;class&gt;</code> if the class has no name.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -262,7 +266,7 @@ To create a list with elements from another list (and other elements), you can u
 <p>Addition can be used between a list and any other value to add an element to the list.</p>
 <p>Substraction can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>) to pop (i.e. delete) an element by index. This supports negative numbers. The returned value is the list after the pop. This can be achieved with <a href="../../stdlib/02builtin-functions/#pop"><code>pop(list, index)</code></a>, although this returns the popped value.</p>
 <p>Multiplication can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>). For example, <code>[1, 2]*2</code> returns <code>[1, 2, 1, 2]</code>.</p>
-<p>Division can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>) to get an element by index. This supports negative numbers. This can be achieved using <code>list[index]</code> or <a href="../../stdlib/02builtin-functions/#get"><code>get(list, index)</code></a>.</p>
+<p>Division can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>) to get an element by index. This supports negative numbers. This can be achieved using <code>list(index)</code> or <a href="../../stdlib/02builtin-functions/#get"><code>get(list, index)</code></a>.</p>
 <p>In boolean context, a list is true if it is not empty</p>
 <h2 id="none">None</h2>
 <p>None is a value to denote the absence of other values.</p>
@@ -270,7 +274,7 @@ To create a list with elements from another list (and other elements), you can u
 <p>No <a href="../05operators/">operation</a> can be used on <code>None</code>.</p>
 <p>In boolean context, <code>None</code> is false.</p>
 <h2 id="modules">Modules</h2>
-<p>A module is a value containing various useful functions and constants. A list of modules can be found <a href="../../stdlib/modules/">here</a>. Importing modules is detailed <a href="../13import/">here</a>. The procedure to create your own module is detailed <a href="../../Expanding/Write-libs/">here</a>.</p>
+<p>A module is a value containing various useful functions and constants. A list of modules can be found <a href="../../stdlib/modules/">here</a>. Importing modules is detailed <a href="../14import/">here</a>. The procedure to create your own module is detailed <a href="../../Expanding/Write-libs/">here</a>.</p>
 <p>No <a href="../05operators/">operation</a> can be used on modules.</p>
 <p>In boolean context, a module is true.</p>
 <div class="admonition note">
