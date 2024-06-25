@@ -1,4 +1,4 @@
-You are a Nougaro developer, and you want to write an amazing library to inplement python amazing things in Nougaro? You're at the right place!!
+You are a Nougaro developer, and you want to write an amazing library to implement python amazing things in Nougaro? You're at the right place!!
 
 You have to options: either [writting it in Nougaro](#write-libs-in-nougaro) (with limited resources), either [writting it in Python](#write-libs-in-python) (with [unlimited](https://xkcd.com/353/) resources).
 

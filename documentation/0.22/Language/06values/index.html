@@ -98,6 +98,30 @@
 <li>
     <a href="../08tests/" class="dropdown-item">Test statements</a>
 </li>
+            
+<li>
+    <a href="../09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../11classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../12read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../13import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../14metas/" class="dropdown-item">Metas</a>
+</li>
     </ul>
   </li>
                                     
@@ -112,6 +136,16 @@
 <li>
     <a href="../../stdlib/02builtin-functions/" class="dropdown-item">02builtin functions</a>
 </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../stdlib/modules/" class="dropdown-item">Modules</a>
+</li>
+    </ul>
+  </li>
     </ul>
   </li>
                                 </ul>
@@ -170,6 +204,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#modules" class="nav-link">Modules</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -185,10 +223,10 @@
 <li>str (<a href="#strings">strings</a>). Internal type: <code>str</code></li>
 <li>list (<a href="#lists">lists</a>). Internal type: <code>list</code></li>
 <li>NoneType (<a href="#none">None</a>). Internal type: <code>NoneValue</code></li>
-<li><a href="link-to-functions">function</a>. Internal type: <code>func</code>.</li>
-<li><a href="link-to-modules">module</a>. Internal type: <code>module</code></li>
-<li><a href="link-to-objects">constructor</a>. Internal type: <code>constructor</code></li>
-<li><a href="link-to-objects">object</a>. Internal type: depends on the class’ name, and it is <code>&lt;class&gt;</code> if the class has no name.</li>
+<li><a href="../10functions/">function</a>. Internal type: <code>func</code>.</li>
+<li><a href="#modules">module</a>. Internal type: <code>module</code></li>
+<li><a href="../11classes/#constructor-value">constructor</a>. Internal type: <code>constructor</code></li>
+<li><a href="../11classes/#object">object</a>. Internal type: depends on the class’ name, and it is <code>&lt;class&gt;</code> if the class has no name.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -220,17 +258,25 @@ All these operations follow the mathematical logic (except for 0^0, that returns
 <p>Lists are a succession of values.</p>
 <p>To declare a list, you can use brackets (<code>[]</code>), and put every value separated by a comma (<code>,</code>) inside. They may be 0 values.
 To create a list with elements from another list (and other elements), you can use this syntax: <code>[1, 2, *list_, 5]</code> (which is <code>[1, 2, 3, 4, 5]</code> if <code>list_</code> is <code>[3, 4]</code>).</p>
-<p>The only <a href="../05operators/">operation</a> that can be used between two lists is multiplication, which extends the first list with the content of the second list. This can also be achieved using <a href="link-to-built-in-functions#extend"><code>extend(list1, list2)</code></a></p>
+<p>The only <a href="../05operators/">operation</a> that can be used between two lists is multiplication, which extends the first list with the content of the second list. This can also be achieved using <a href="../../stdlib/02builtin-functions/#extend"><code>extend(list1, list2)</code></a></p>
 <p>Addition can be used between a list and any other value to add an element to the list.</p>
-<p>Substraction can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>) to pop (i.e. delete) an element by index. This supports negative numbers. The returned value is the list after the pop. This can be achieved with <a href="link-to-built-in-functions#pop"><code>pop(list, index)</code></a>, although this returns the popped value.</p>
+<p>Substraction can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>) to pop (i.e. delete) an element by index. This supports negative numbers. The returned value is the list after the pop. This can be achieved with <a href="../../stdlib/02builtin-functions/#pop"><code>pop(list, index)</code></a>, although this returns the popped value.</p>
 <p>Multiplication can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>). For example, <code>[1, 2]*2</code> returns <code>[1, 2, 1, 2]</code>.</p>
-<p>Division can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>) to get an element by index. This supports negative numbers. This can be achieved using <code>list[index]</code> or <a href="link-to-built-in-functions#get"><code>get(list, index)</code></a>.</p>
+<p>Division can be used between a list and an <a href="#numbers">integer</a> (type <code>int</code>) to get an element by index. This supports negative numbers. This can be achieved using <code>list[index]</code> or <a href="../../stdlib/02builtin-functions/#get"><code>get(list, index)</code></a>.</p>
 <p>In boolean context, a list is true if it is not empty</p>
 <h2 id="none">None</h2>
 <p>None is a value to denote the absence of other values.</p>
 <p>It is accessible trought the <code>None</code> built-in variable.</p>
 <p>No <a href="../05operators/">operation</a> can be used on <code>None</code>.</p>
-<p>In boolean context, <code>None</code> is false.</p></div>
+<p>In boolean context, <code>None</code> is false.</p>
+<h2 id="modules">Modules</h2>
+<p>A module is a value containing various useful functions and constants. A list of modules can be found <a href="../../stdlib/modules/">here</a>. Importing modules is detailed <a href="../13import/">here</a>. The procedure to create your own module is detailed <a href="../../Expanding/Write-libs/">here</a>.</p>
+<p>No <a href="../05operators/">operation</a> can be used on modules.</p>
+<p>In boolean context, a module is true.</p>
+<div class="admonition note">
+<p class="admonition-title">Changed in 0.22.0-beta</p>
+<p>Prior to 0.22.0-beta, a module was false in boolean context.</p>
+</div></div>
             </div>
         </div>
 

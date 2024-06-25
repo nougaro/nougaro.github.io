@@ -37,4 +37,4 @@ Examples:
 ```
 
 !!! note
-    You can use the [meta](0xmetas.md) `nbspBetweenFrenchGuillemets` to be forced to use a no-break-space or a narrow-no-break-space after `«` and before `»`. These NBSP are not counted in the string and this does not affect the other string delimiters.
+    You can use the [meta](14metas.md) `nbspBetweenFrenchGuillemets` to be forced to use a no-break-space or a narrow-no-break-space after `«` and before `»`. These NBSP are not counted in the string and this does not affect the other string delimiters.

@@ -7,10 +7,10 @@ Here is the list of the value types in Nougaro:
 * str ([strings](#strings)). Internal type: `str`
 * list ([lists](#lists)). Internal type: `list`
 * NoneType ([None](#none)). Internal type: `NoneValue`
-* [function](link-to-functions). Internal type: `func`.
-* [module](link-to-modules). Internal type: `module`
-* [constructor](link-to-objects). Internal type: `constructor`
-* [object](link-to-objects). Internal type: depends on the class’ name, and it is `<class>` if the class has no name.
+* [function](10functions.md). Internal type: `func`.
+* [module](#modules). Internal type: `module`
+* [constructor](11classes.md#constructor-value). Internal type: `constructor`
+* [object](11classes.md#object). Internal type: depends on the class’ name, and it is `<class>` if the class has no name.
 
 !!! note
     Internal value types are base value (type: `BaseValue`) and default value (type: `DefaultValue`)
@@ -51,15 +51,15 @@ Lists are a succession of values.
 To declare a list, you can use brackets (`[]`), and put every value separated by a comma (`,`) inside. They may be 0 values.
 To create a list with elements from another list (and other elements), you can use this syntax: `[1, 2, *list_, 5]` (which is `[1, 2, 3, 4, 5]` if `list_` is `[3, 4]`).
 
-The only [operation](05operators.md) that can be used between two lists is multiplication, which extends the first list with the content of the second list. This can also be achieved using [`extend(list1, list2)`](link-to-built-in-functions#extend)
+The only [operation](05operators.md) that can be used between two lists is multiplication, which extends the first list with the content of the second list. This can also be achieved using [`extend(list1, list2)`](../stdlib/02builtin-functions.md#extend)
 
 Addition can be used between a list and any other value to add an element to the list.
 
-Substraction can be used between a list and an [integer](#numbers) (type `int`) to pop (i.e. delete) an element by index. This supports negative numbers. The returned value is the list after the pop. This can be achieved with [`pop(list, index)`](link-to-built-in-functions#pop), although this returns the popped value.
+Substraction can be used between a list and an [integer](#numbers) (type `int`) to pop (i.e. delete) an element by index. This supports negative numbers. The returned value is the list after the pop. This can be achieved with [`pop(list, index)`](../stdlib/02builtin-functions.md#pop), although this returns the popped value.
 
 Multiplication can be used between a list and an [integer](#numbers) (type `int`). For example, `[1, 2]*2` returns `[1, 2, 1, 2]`.
 
-Division can be used between a list and an [integer](#numbers) (type `int`) to get an element by index. This supports negative numbers. This can be achieved using `list[index]` or [`get(list, index)`](link-to-built-in-functions#get).
+Division can be used between a list and an [integer](#numbers) (type `int`) to get an element by index. This supports negative numbers. This can be achieved using `list[index]` or [`get(list, index)`](../stdlib/02builtin-functions.md#get).
 
 In boolean context, a list is true if it is not empty
 
@@ -71,3 +71,13 @@ It is accessible trought the `None` built-in variable.
 No [operation](05operators.md) can be used on `None`.
 
 In boolean context, `None` is false.
+
+## Modules
+A module is a value containing various useful functions and constants. A list of modules can be found [here](../stdlib/modules/index.md). Importing modules is detailed [here](13import.md). The procedure to create your own module is detailed [here](../Expanding/Write-libs.md).
+
+No [operation](05operators.md) can be used on modules.
+
+In boolean context, a module is true.
+
+!!! note "Changed in 0.22.0-beta"
+    Prior to 0.22.0-beta, a module was false in boolean context.

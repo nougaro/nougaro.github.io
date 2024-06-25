@@ -12,6 +12,9 @@ This is the official documentation for Nougaro version 0.22.0-beta.
     * [Values](Language/06values.md)
     * [Variables](Language/07variables.md)
     * [Tests (if statement)](Language/08tests.md)
+    * [Loops](Language/09loops.md)
+    * [Read and write in files](Language/12read_and_write_files.md)
+    * [Metas](Language/14metas.md)
 * Standard library reference: builtins, modules, …
 * Expanding Nougaro (for Python developers)
     * [Write libraries for Nougaro](Expanding/Write-libs.md)

@@ -55,7 +55,7 @@ If you don't need a variable anymore, you can delete it with the `del` keyword: 
 
 ## Examples
 * `var foo = var bar = 12`
-* `while foo != bar - 1 then var bar -= 1` (see [while loop](link-to-loops.md#while))
+* `while foo != bar - 1 then var bar -= 1` (see [while loop](09loops.md#while))
 
 ### Example for deletion
 
