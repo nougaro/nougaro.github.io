@@ -20,6 +20,9 @@ This is the official documentation for Nougaro version 0.22.0-beta.
     * [Import and export](Language/14import.md)
     * [Metas](Language/15metas.md)
 * Standard library reference: builtins, modules, …
+    * [Built-in variables](stdlib/01builtin-variables.md)
+    * [Built-in functions](stdlib/02builtin-functions.md)
+    * [Modules](stdlib/modules/index.md)
 * Expanding Nougaro (for Python developers)
     * [Write libraries for Nougaro](Expanding/Write-libs.md)
 * [Internals](internals.md)

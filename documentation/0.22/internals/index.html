@@ -134,11 +134,11 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../stdlib/01builtin-variables/" class="dropdown-item">01builtin variables</a>
+    <a href="../stdlib/01builtin-variables/" class="dropdown-item">List of built-in variables</a>
 </li>
             
 <li>
-    <a href="../stdlib/02builtin-functions/" class="dropdown-item">02builtin functions</a>
+    <a href="../stdlib/02builtin-functions/" class="dropdown-item">List of built-in functions</a>
 </li>
             
   <li class="dropdown-submenu">
@@ -200,6 +200,14 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#nougaro-informations" class="nav-link">Nougaro informations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#symbol-table" class="nav-link">Symbol table</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -222,6 +230,22 @@
 <h2 id="base-value">Base value</h2>
 <ul>
 <li><code>__base_value__</code> is the base value (python class <code>Value</code>). It is the parent class of all the other values. It is the only value to crash on <code>==</code> and <code>!=</code> <a href="../Language/05operators/#logical-operators">operators</a>.</li>
+</ul>
+<h2 id="nougaro-informations">Nougaro informations</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section is duplicated in <a href="../stdlib/01builtin-variables/">this file</a></p>
+</div>
+<ul>
+<li><code>__noug_version__</code>: string of the Nougaro version (e.g. "0.15.0-beta".) You can use the <a href="https://github.com/jd-develop/nougaro/wiki/noug_version"><code>noug_version</code></a> lib to have better informations.</li>
+<li><code>__data_version__</code>: the Nougaro data version, an internal version keeping track of changes in the config file directory structure</li>
+<li><code>__version_id__</code>: an ID increased at least once per version</li>
+<li><code>__python_version__</code>: string of the Python version (e.g. "3.10.5")</li>
+<li><code>__noug_dir__</code>: string of the absolute path of the directory where shell.(py/exe/bin) is located. May be used with file I/O <code>read</code> and <code>write</code> statements.</li>
+</ul>
+<h2 id="symbol-table">Symbol table</h2>
+<ul>
+<li><code>__symbol_table__</code> : string of the internal “p-formated” symbols dictionnary.</li>
 </ul></div>
             </div>
         </div>

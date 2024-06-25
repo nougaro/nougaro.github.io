@@ -88,5 +88,11 @@ instance.increment_b(10)
 assert instance.b == 11
 ```
 
+Internal type: `Name` (depends on the class’ name).
+
+No [operation](05operators.md) can be used on objects.
+
+Objects are false in boolean context.
+
 ## Example
 See the `stack.noug` example located in `./examples/` in the main Nougaro repository.
