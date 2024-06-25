@@ -256,6 +256,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#assertions" class="nav-link">Assertions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -289,6 +293,10 @@
 <tr>
 <td><code>else</code></td>
 <td><code>else</code></td>
+</tr>
+<tr>
+<td><a href="#assertions"><code>assert</code></a></td>
+<td><code>assert</code></td>
 </tr>
 </tbody>
 </table>
@@ -484,7 +492,13 @@ elif foo &lt; bar xor foo &gt; variable then
 else
     var foo = 12
 end
-</code></pre></div>
+</code></pre>
+<h2 id="assertions">Assertions</h2>
+<p>The <code>assert</code> <a href="../04identifiers_and_keywords/#keywords">keyword</a> can be used to quickly check for a condition, and crash if the condition is not met. Its syntax is the following:</p>
+<pre><code class="language-nougaro">assert (condition)
+assert (condition), &quot;error message.&quot;
+</code></pre>
+<p>If <code>(condition)</code> is true, nothing happens and the program continues. However, if it is false, the program crashes with <code>AssertionError</code> with the error message specified in the code (or without any error message if no error message is specified.)</p></div>
             </div>
         </div>
 

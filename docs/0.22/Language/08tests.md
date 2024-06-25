@@ -2,12 +2,13 @@
 ## List
 There is the list of test keywords in Nougaro :
 
-| Nougaro   | Python    |
-|-----------|-----------|
-| `if`      | `if`      |
-| `then`    | `:`       |
-| `elif`    | `elif`    |
-| `else`    | `else`    |
+| Nougaro                  | Python    |
+|--------------------------|-----------|
+| `if`                     | `if`      |
+| `then`                   | `:`       |
+| `elif`                   | `elif`    |
+| `else`                   | `else`    |
+| [`assert`](#assertions)  | `assert`  |
 
 ## Syntax
 
@@ -122,3 +123,13 @@ else
     var foo = 12
 end
 ```
+
+## Assertions
+The `assert` [keyword](04identifiers_and_keywords.md#keywords) can be used to quickly check for a condition, and crash if the condition is not met. Its syntax is the following:
+
+```nougaro
+assert (condition)
+assert (condition), "error message."
+```
+
+If `(condition)` is true, nothing happens and the program continues. However, if it is false, the program crashes with `AssertionError` with the error message specified in the code (or without any error message if no error message is specified.)
