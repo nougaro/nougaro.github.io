@@ -1,5 +1,7 @@
 # Time
 
+*[Source code](https://github.com/jd-develop/nougaro/blob/main/lib_/time_.py)*
+
 The `time` module can be imported with the statement `import time`.
 
 The `time` module is used to sleep for seconds or milliseconds, and to know current time, timezone and system’s epoch.

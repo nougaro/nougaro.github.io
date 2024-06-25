@@ -1,5 +1,7 @@
 # Noug Version
 
+*[Source code](https://github.com/jd-develop/nougaro/blob/main/lib_/noug_version.noug)*
+
 The `noug_version` module can be imported with the statement `import noug_version`.
 
 The `noug_version` module is used to have better informations about the current Nougaro version.

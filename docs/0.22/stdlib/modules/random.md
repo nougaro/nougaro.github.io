@@ -1,5 +1,7 @@
 # Random
 
+*[Source code](https://github.com/jd-develop/nougaro/blob/main/lib_/random_.py)*
+
 The `random` module can be imported with the statement `import random`.
 
 The `random` module is used to generate random numbers.

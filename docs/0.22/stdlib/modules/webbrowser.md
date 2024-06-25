@@ -1,4 +1,7 @@
 # Webbrowser
+
+*[Source code](https://github.com/jd-develop/nougaro/blob/main/lib_/webbrowser_.py)*
+
 !!! note ""
     Added in 0.19.0-beta
 

@@ -1,5 +1,7 @@
 # Lorem
 
+*[Source code](https://github.com/jd-develop/nougaro/blob/main/lib_/lorem.noug)*
+
 Lorem is a lib to generate Lorem Ipsum texts (dummy texts).
 
 ## Function

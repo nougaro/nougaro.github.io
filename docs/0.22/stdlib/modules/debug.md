@@ -1,4 +1,7 @@
 # Debug
+
+*[Source code](https://github.com/jd-develop/nougaro/blob/main/lib_/debug.noug)*
+
 Debug is a lib that contains some debugging tools.
 
 ## Constants

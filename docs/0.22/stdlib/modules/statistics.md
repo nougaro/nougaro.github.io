@@ -1,5 +1,7 @@
 # Statistics
 
+*[Source code](https://github.com/jd-develop/nougaro/blob/main/lib_/statistics_.py)*
+
 The `statistics` module can be imported with the statement `import statistics`.
 
 The `statistics` module is used to do statistics. To do math, use the [`math`](math.md) module.

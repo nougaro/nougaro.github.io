@@ -1,4 +1,6 @@
-# `math` module
+# Math
+
+*[Source code](https://github.com/jd-develop/nougaro/blob/main/lib_/math_.py)*
 
 The `math` module can be imported with the statement `import math`.
 
