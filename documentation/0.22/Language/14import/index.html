@@ -148,6 +148,42 @@
 <li>
     <a href="../../stdlib/modules/" class="dropdown-item">Modules</a>
 </li>
+            
+<li>
+    <a href="../../stdlib/modules/debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/math/" class="dropdown-item">math module</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
     </ul>
   </li>
     </ul>
@@ -210,7 +246,7 @@
 <h1 id="import-and-export">Import and export</h1>
 <p><code>import</code> and <code>export</code> are two <a href="../04identifiers_and_keywords/#keywords">keywords</a> related to <a href="../06values/#modules">modules</a>/libraries.</p>
 <h2 id="import">Import</h2>
-<p>The <code>import</code> keyword is used to import a module in the current code. It follows the syntax <code>import name</code> or <code>import name as alias</code>. It checks for <code>name</code> in Nougaro <a href="../../stdlib/modules/">stardard library</a> and in the current directory for a file named <code>name.noug</code>. <code>dir.subdir.name</code> looks for <code>./dir/subdir/name.noug</code>. Note: the current directory is the directory of the file that were executed. For instance, if the file <code>foo.noug</code> (in the directory <code>project</code>) imported <code>dir.bar</code>, and that <code>dir/bar.noug</code> has <code>import name</code>, name is checked in the <code>project</code> directory.</p>
+<p>The <code>import</code> keyword is used to import a module in the current code. It follows the syntax <code>import name</code> or <code>import name as alias</code>. It checks for <code>name</code> in Nougaro <a href="../../stdlib/modules/">stardard library</a> and in the current directory for a file named <code>name.noug</code>. <code>dir.subdir.name</code> looks for <code>./dir/subdir/name.noug</code>. Note: the “current directory” is the directory of the file that were executed. For instance, if the file <code>foo.noug</code> (in the directory <code>project</code>) imported <code>dir.bar</code>, and that <code>dir/bar.noug</code> has <code>import name</code>, name is checked in the <code>project</code> directory. The “current directory” is the working directory (<code>pwd</code>) if you launched an interactive session (shell).</p>
 <p>The <code>import</code> keyword created a <a href="../06values/#modules">module</a> value with, as attributes, all the values exported by the module.</p>
 <h2 id="export">Export</h2>
 <p>The <code>export</code> keyword is used to export a value in a module, that will become an attribute of the module’s value when imported.
@@ -229,6 +265,7 @@ More in <a href="../../Expanding/Write-libs/">this page</a>.</p></div>
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script src="../../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
