@@ -8,6 +8,7 @@
 List of the command line arguments (type string).
 
 Examples (assuming your Nougaro command is `noug`):
+
 * `noug -c "print(__args__)" -t d 78876876 -v tth` prints `["-c", "-t", "d", "78876876", "-v", "tth"]`
 * `noug examples/args.noug -t d 78876876 -v tth` prints `["examples/args.noug", "-t", "d", "78876876", "-v", "tth"]` (check out the contents of `args.noug`)
 * `noug -c "print(__args__)"` prints `["-c"]`
