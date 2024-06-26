@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Jean Dubois">
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Statistics - Nougaro Documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Nougaro Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../.." class="nav-link">Welcome to the Nougaro documentation</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">0.22</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../0.22/" class="dropdown-item">Nougaro 0.22.0-beta documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../../../0.22/hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../../../0.22/internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../../0.22/Expanding/Write-libs/" class="dropdown-item">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../../0.22/Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../../0.22/stdlib/01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/02builtin-functions/" class="dropdown-item">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">0.23</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Nougaro 0.22.0-beta documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../../hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../../internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../Expanding/Write-libs/" class="dropdown-item">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../../Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../../Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../../Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../../Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../../Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../../Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../../Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../../Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../../Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../../Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../../Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../../Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../../Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../../Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../../Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="../../02builtin-functions/" class="dropdown-item">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Statistics</a>
+</li>
+            
+<li>
+    <a href="../time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../random/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../time/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#statistics" class="nav-link">Statistics</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#functions" class="nav-link">Functions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#notes-on-methods-for-computing-quantiles" class="nav-link">Notes on methods for computing quantiles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="statistics">Statistics</h1>
+<p><em><a href="https://github.com/jd-develop/nougaro/blob/main/lib_/statistics_.py">Source code</a></em></p>
+<p>The <code>statistics</code> module can be imported with the statement <code>import statistics</code>.</p>
+<p>The <code>statistics</code> module is used to do statistics. To do math, use the <a href="../math/"><code>math</code></a> module.</p>
+<h2 id="functions">Functions</h2>
+<h3 id="statisticsmean"><code>statistics.mean</code></h3>
+<p>Syntax: <code>statistics.mean(list)</code></p>
+<p>Calculates the mean of a list of numbers. </p>
+<h3 id="statisticsgeometric_mean"><code>statistics.geometric_mean</code></h3>
+<p>Syntax: <code>statistics.geometric_mean(list)</code></p>
+<p>Calculates the geometric mean of a list of positive numbers.</p>
+<h3 id="statisticsharmonic_mean"><code>statistics.harmonic_mean</code></h3>
+<p>Syntax: <code>statistics.harmonic_mean</code></p>
+<p>Calculates the harmonic mean of a list of positive numbers.</p>
+<h3 id="statisticsmedian"><code>statistics.median</code></h3>
+<p>Syntax: <code>statistics.median(list)</code></p>
+<p>Calculates the median of a list of numbers.</p>
+<h3 id="statisticsquantiles"><code>statistics.quantiles</code></h3>
+<p>Syntax: <code>statistics.quantiles(list, n=4, method='exclusive')</code></p>
+<p>Cuts a list of numbers in <code>n</code> parts and returns a list of the values where the list was cut, using <code>exclusive</code> or <code>inclusive</code> method. <code>n</code> and <code>method</code> are optional.</p>
+<div class="admonition warning">
+<p class="admonition-title">Disclamer from the <a href="https://github.com/python/cpython/blob/769aea332940f03c3e5b1ad9badd6635c1ac992a/Lib/statistics.py#L1121">Python source code</a></p>
+<h2 id="notes-on-methods-for-computing-quantiles">Notes on methods for computing quantiles</h2>
+<p>There is no one perfect way to compute quantiles.  Here we offer
+two methods that serve common needs.  Most other packages
+surveyed offered at least one or both of these two, making them
+"standard" in the sense of "widely-adopted and reproducible".
+They are also easy to explain, easy to compute manually, and have
+straight-forward interpretations that aren't surprising.</p>
+<p>The default method is known as "R6", "PERCENTILE.EXC", or "expected
+value of rank order statistics". The alternative method is known as
+"R7", "PERCENTILE.INC", or "mode of rank order statistics".</p>
+<p>For sample data where there is a positive probability for values
+beyond the range of the data, the R6 exclusive method is a
+reasonable choice.  Consider a random sample of nine values from a
+population with a uniform distribution from 0.0 to 1.0.  The
+distribution of the third ranked sample point is described by
+betavariate(alpha=3, beta=7) which has mode=0.250, median=0.286, and
+mean=0.300.  Only the latter (which corresponds with R6) gives the
+desired cut point with 30% of the population falling below that
+value, making it comparable to a result from an inv_cdf() function.
+The R6 exclusive method is also idempotent.</p>
+<p>For describing population data where the end points are known to
+be included in the data, the R7 inclusive method is a reasonable
+choice.  Instead of the mean, it uses the mode of the beta
+distribution for the interior points.  Per Hyndman &amp; Fan, "One nice
+property is that the vertices of Q7(p) divide the range into n - 1
+intervals, and exactly 100p% of the intervals lie to the left of
+Q7(p) and 100(1 - p)% of the intervals lie to the right of Q7(p)."</p>
+<p>If needed, other methods could be added.  However, for now, the
+position is that fewer options make for easier choices and that
+external packages can be used for anything more advanced.</p>
+</div>
+<h3 id="statisticsscopelist"><code>statistics.scope(list)</code></h3>
+<p>Syntax: <code>statistics.scope(list)</code></p>
+<p>Calculates the scope of a list of numbers: <code>max(list) - min(list)</code>.</p>
+<h3 id="statisticsmodelist"><code>statistics.mode(list)</code></h3>
+<p>Syntax: <code>statistics.mode(list)</code></p>
+<p>Calculates the mode of a list of numbers, i.e. the most common value.</p>
+<h3 id="statisticsmultimodevalue"><code>statistics.multimode(value)</code></h3>
+<p>Syntax: <code>statistics.multimode(value)</code></p>
+<p>Calculates the modes of a list or a str, i.e. the most common values. It returns a list.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

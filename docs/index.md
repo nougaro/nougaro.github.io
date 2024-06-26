@@ -7,6 +7,7 @@ Nougaro is an interpreted dynamic-typed programming language.
 ## Choose your version
 
 * [0.22](./0.22/index.md)
+* [0.23](./0.23/index.md)
 
 ## License
 This document is under the [GNU FDL](../LICENSE) licence.

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Jean Dubois">
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Unicodedata - Nougaro Documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Nougaro Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../.." class="nav-link">Welcome to the Nougaro documentation</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">0.22</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../0.22/" class="dropdown-item">Nougaro 0.22.0-beta documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../../../0.22/hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../../../0.22/internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../../0.22/Expanding/Write-libs/" class="dropdown-item">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../../0.22/Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../../0.22/stdlib/01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/02builtin-functions/" class="dropdown-item">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../../../../0.22/stdlib/modules/webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">0.23</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Nougaro 0.22.0-beta documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../../hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../../internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../Expanding/Write-libs/" class="dropdown-item">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../../Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../../Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../../Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../../Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../../Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../../Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../../Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../../Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../../Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../../Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../../Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../../Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../../Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../../Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../../Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="../../02builtin-functions/" class="dropdown-item">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../time/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../webbrowser/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#unicodedata" class="nav-link">Unicodedata</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#constants" class="nav-link">Constants</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#functions" class="nav-link">Functions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="unicodedata">Unicodedata</h1>
+<p><em><a href="https://github.com/jd-develop/nougaro/blob/main/lib_/unicodedata_.py">Source code</a></em></p>
+<div class="admonition note">
+<p class="admonition-title">Credits</p>
+<p>This is massively copied from <a href="https://docs.python.org/3/library/unicodedata.html">python documentation of unicodedata</a>, under the <a href="https://www.python.org/download/releases/2.0/license/">Python Software Foundation License Version 2</a>. © <a href="https://docs.python.org/3/copyright.html">Copyright</a> 2001-2023, Python Software Foundation. This text has not been edited.</p>
+</div>
+<p>The <code>unicodedata</code> module can be imported with the statement <code>import unicodedata</code>.</p>
+<p>The <code>unicodedata</code> provides access to the Unicode database.</p>
+<h2 id="constants">Constants</h2>
+<p><code>unicodedata.unicodedata_version</code>: the version of the Unicode database used in this module. Depends on Python version!</p>
+<h2 id="functions">Functions</h2>
+<h3 id="unicodedatalookup"><code>unicodedata.lookup</code></h3>
+<p>Syntax: <code>unicodedata.lookup(name)</code></p>
+<p>Look up character by name. If a character with the given name is found, return the corresponding character. If not found, NotDefinedError is raised.</p>
+<h3 id="unicodedataname"><code>unicodedata.name</code></h3>
+<p>Syntax: <code>unicodedata.name(chr, &lt;default&gt;)</code></p>
+<p>Returns the name assigned to the character <code>chr</code> as a string. If no name is defined, <code>default</code> is returned, or, if not given, RunTimeError is raised.</p>
+<h3 id="unicodedatacategory"><code>unicodedata.category</code></h3>
+<p>Syntax: <code>unicodedata.category(chr)</code></p>
+<p>Returns the general category assigned to the character <code>chr</code> as string.</p>
+<h3 id="unicodedatabidirectional"><code>unicodedata.bidirectional</code></h3>
+<p>Syntax: <code>unicodedata.bidirectional(chr)</code></p>
+<p>Returns the bidirectional class assigned to the character <code>chr</code> as string. If no such value is defined, an empty string is returned.</p>
+<h3 id="unicodedatacombining"><code>unicodedata.combining</code></h3>
+<p>Syntax: <code>unicodedata.combining(chr)</code></p>
+<p>Returns the canonical combining class assigned to the character <code>chr</code> as integer. Returns 0 if no combining class is defined.</p>
+<h3 id="unicodedataeast_asian_width"><code>unicodedata.east_asian_width</code></h3>
+<p>Syntax: <code>unicodedata.east_asian_width(chr)</code></p>
+<p>Returns the east asian width assigned to the character <code>chr</code> as string.</p>
+<h3 id="unicodedatamirrored"><code>unicodedata.mirrored</code></h3>
+<p>Syntax: <code>unicodedata.mirrored(chr)</code></p>
+<p>Returns the mirrored property assigned to the character <code>chr</code> as integer. Returns <code>1</code> if the character has been identified as a “mirrored” character in bidirectional text, <code>0</code> otherwise.</p>
+<h3 id="unicodedatadecomposition"><code>unicodedata.decomposition</code></h3>
+<p>Syntax: <code>unicodedata.decomposition(chr)</code></p>
+<p>Returns the character decomposition mapping assigned to the character <code>chr</code> as string. An empty string is returned in case no such mapping is defined.</p>
+<h3 id="unicodedatanormalize"><code>unicodedata.normalize</code></h3>
+<p>Syntax: <code>unicodedata.normalize(form, unistr)</code></p>
+<p>Returns the normal form <code>form</code> for the Unicode string <code>unistr</code>. Valid values for <code>form</code> are ‘NFC’, ‘NFKC’, ‘NFD’, and ‘NFKD’.</p>
+<p>The Unicode standard defines various normalization forms of a Unicode string, based on the definition of canonical equivalence and compatibility equivalence. In Unicode, several characters can be expressed in various way. For example, the character U+00C7 (LATIN CAPITAL LETTER C WITH CEDILLA) can also be expressed as the sequence U+0043 (LATIN CAPITAL LETTER C) U+0327 (COMBINING CEDILLA).</p>
+<p>For each character, there are two normal forms: normal form C and normal form D. Normal form D (NFD) is also known as canonical decomposition, and translates each character into its decomposed form. Normal form C (NFC) first applies a canonical decomposition, then composes pre-combined characters again.</p>
+<p>In addition to these two forms, there are two additional normal forms based on compatibility equivalence. In Unicode, certain characters are supported which normally would be unified with other characters. For example, U+2160 (ROMAN NUMERAL ONE) is really the same thing as U+0049 (LATIN CAPITAL LETTER I). However, it is supported in Unicode for compatibility with existing character sets (e.g. gb2312).</p>
+<p>The normal form KD (NFKD) will apply the compatibility decomposition, i.e. replace all compatibility characters with their equivalents. The normal form KC (NFKC) first applies the compatibility decomposition, followed by the canonical composition.</p>
+<p>Even if two unicode strings are normalized and look the same to a human reader, if one has combining characters and the other doesn’t, they may not compare equal.</p>
+<h3 id="unicodedatais_normalized"><code>unicodedata.is_normalized</code></h3>
+<p>Syntax: <code>unicodedata.is_normalized(form, unistr)</code></p>
+<p>Return whether the Unicode string <code>unistr</code> is in the normal form <code>form</code>. Valid values for <code>form</code> are ‘NFC’, ‘NFKC’, ‘NFD’, and ‘NFKD’.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
