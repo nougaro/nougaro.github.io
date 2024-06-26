@@ -429,10 +429,18 @@
 <h2 id="functions">Functions</h2>
 <h3 id="noug_versionclean_version_for_gh"><code>noug_version.clean_version_for_gh</code></h3>
 <div class="admonition note">
-<p>Added in 0.19.0-beta</p>
+<p class="admonition-title">Version history</p>
+<p>Added in 0.19.0-beta
+Changed in 0.23.0-beta: added optional parameters <code>print_value</code> and <code>return_value</code>.</p>
 </div>
-<p>Syntax: <code>noug_version.clean_version_for_gh()</code></p>
-<p>Generates a beautiful str for the GitHub issues or PRs.</p></div>
+<p>Syntax: <code>noug_version.clean_version_for_gh(&lt;print_value=False&gt;, &lt;return_value=True&gt;)</code></p>
+<p>Generates a beautiful str for the GitHub issues or PRs. If <code>print_value</code> is true, it prints the value. If <code>return_value</code> is true, it returns the value.</p>
+<h3 id="noug_versionclean_version_for_nuitka_under_windows"><code>noug_version.clean_version_for_nuitka_under_windows</code></h3>
+<div class="admonition note">
+<p>Added in 0.23.0-beta</p>
+</div>
+<p>Syntax: <code>noug_version.clean_version_for_nuitka_under_windows(&lt;print_value=False&gt;, &lt;return_value=True&gt;)</code></p>
+<p>Generates a string under the form <code>"&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;"</code>, or <code>"&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;.&lt;release_serial&gt;"</code> if <code>release_serial</code> ≠ 0. This is meant to be passed as the <code>--windows-product-version</code> option of Ntuika. If <code>print_value</code> is true, it prints the value. If <code>return_value</code> is true, it returns the value.</p></div>
             </div>
         </div>
 

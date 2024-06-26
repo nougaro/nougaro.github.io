@@ -25,9 +25,19 @@ Examples are given considering the version `3.14.15-rc.92`
 ## Functions
 ### `noug_version.clean_version_for_gh`
 
-!!! note ""
+!!! note "Version history"
     Added in 0.19.0-beta
+    Changed in 0.23.0-beta: added optional parameters `print_value` and `return_value`.
 
-Syntax: `noug_version.clean_version_for_gh()`
+Syntax: `noug_version.clean_version_for_gh(<print_value=False>, <return_value=True>)`
 
-Generates a beautiful str for the GitHub issues or PRs.
+Generates a beautiful str for the GitHub issues or PRs. If `print_value` is true, it prints the value. If `return_value` is true, it returns the value.
+
+### `noug_version.clean_version_for_nuitka_under_windows`
+
+!!! note ""
+    Added in 0.23.0-beta
+
+Syntax: `noug_version.clean_version_for_nuitka_under_windows(<print_value=False>, <return_value=True>)`
+
+Generates a string under the form `"<major>.<minor>.<patch>"`, or `"<major>.<minor>.<patch>.<release_serial>"` if `release_serial` ≠ 0. This is meant to be passed as the `--windows-product-version` option of Ntuika. If `print_value` is true, it prints the value. If `return_value` is true, it returns the value.
