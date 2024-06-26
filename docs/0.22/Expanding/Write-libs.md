@@ -9,7 +9,8 @@ You need to know how to code in Nougaro.
 ## Start coding
 The file should be named `nameofthelib.noug` and be located in the `lib_` folder in the Nougaro repository.
 
-Simply write all your code. If you want something to be accessible when imported, **use one of those syntaxes:**:
+Simply write all your code. If you want something to be accessible when imported, **use one of those syntaxes**:
+
 * `export identifier (as identifier)`
 * `export (any expression) as identifier`
 
