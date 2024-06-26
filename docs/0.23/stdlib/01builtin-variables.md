@@ -17,7 +17,7 @@ Examples (assuming your Nougaro command is `noug`):
 !!! note
     This section is duplicated in [this file](../internals.md)
 
-* `__noug_version__`: string of the Nougaro version (e.g. "0.15.0-beta".) You can use the [`noug_version`](https://github.com/jd-develop/nougaro/wiki/noug_version) lib to have better informations.
+* `__noug_version__`: string of the Nougaro version (e.g. "0.15.0-beta".) You can use the [`noug_version`](modules/noug_version.md) lib to have better informations.
 * `__data_version__`: the Nougaro data version, an internal version keeping track of changes in the config file directory structure
 * `__version_id__`: an ID increased at least once per version
 * `__python_version__`: string of the Python version (e.g. "3.10.5")
@@ -44,4 +44,4 @@ You use nougaro version beta 0.14, interpreted with Python 3.11.4
 You use Linux 6.2.0-27-generic #28-Ubuntu SMP PREEMPT_DYNAMIC Wed Jul 12 22:39:51 UTC 2023
 ```
 
-Note that this code is in [examples.noug](https://github.com/jd-develop/nougaro/blob/main/example.noug)
+Note that this code is in [example.noug](https://github.com/jd-develop/nougaro/blob/main/example.noug)
