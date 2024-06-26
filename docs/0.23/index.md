@@ -1,6 +1,6 @@
-# Nougaro 0.22.0-beta documentation
+# Nougaro 0.23.0-beta documentation
 
-This is the official documentation for Nougaro version 0.22.0-beta.
+This is the official documentation for Nougaro version 0.23.0-beta.
 
 * [Hello, world!](hello_world.md)
 * Language reference: syntax, statements, …
