@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Jean Dubois">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Write libs - Nougaro Documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Nougaro Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Welcome to the Nougaro documentation</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">0.22</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../0.22/" class="dropdown-item">Nougaro 0.22.0-beta documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../../0.22/hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../../0.22/internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.22/Expanding/Write-libs/" class="dropdown-item">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.22/Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.22/stdlib/01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/02builtin-functions/" class="dropdown-item">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">0.23</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../0.23/" class="dropdown-item">Nougaro 0.23.0-beta documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../../0.23/hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../../0.23/internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.23/Expanding/Write-libs/" class="dropdown-item">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.23/Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.23/stdlib/01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/02builtin-functions/" class="dropdown-item">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">1.0</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Nougaro 0.23.0-beta documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../stdlib/01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/02builtin-functions/" class="dropdown-item">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../stdlib/modules/" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../../stdlib/modules/webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../internals/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../Language/01syntax/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#write-libs-in-nougaro" class="nav-link">Write libs in Nougaro</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#requirements" class="nav-link">Requirements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#start-coding" class="nav-link">Start coding</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#write-libs-in-python" class="nav-link">Write libs in Python</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#requirements_1" class="nav-link">Requirements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#start-coding_1" class="nav-link">Start coding</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#what_to_import-do-not-forget-that-one" class="nav-link">WHAT_TO_IMPORT : DO NOT forget that one!!</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#custom-errors" class="nav-link">Custom errors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#examples" class="nav-link">Examples</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#here-you-go" class="nav-link">Here you go!</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>You are a Nougaro developer, and you want to write an amazing library to implement python amazing things in Nougaro? You're at the right place!!</p>
+<p>You have to options: either <a href="#write-libs-in-nougaro">writting it in Nougaro</a> (with limited resources), either <a href="#write-libs-in-python">writting it in Python</a> (with <a href="https://xkcd.com/353/">unlimited</a> resources).</p>
+<h1 id="write-libs-in-nougaro">Write libs in Nougaro</h1>
+<h2 id="requirements">Requirements</h2>
+<p>You need to know how to code in Nougaro.</p>
+<h2 id="start-coding">Start coding</h2>
+<p>The file should be named <code>nameofthelib.noug</code> and be located in the <code>lib_</code> folder in the Nougaro repository.</p>
+<p>Simply write all your code. If you want something to be accessible when imported, <strong>use one of those syntaxes</strong>:</p>
+<ul>
+<li><code>export identifier (as identifier)</code></li>
+<li><code>export (any expression) as identifier</code></li>
+</ul>
+<p>You can find examples of built-in modules written in Nougaro in the <code>lib_</code> folder.</p>
+<h1 id="write-libs-in-python">Write libs in Python</h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Everything changed in 0.16.0-beta and in 0.19.0-beta</p>
+</div>
+<h2 id="requirements_1">Requirements</h2>
+<p>You need to know how to code in Python. Don't worry, that's easy ;)</p>
+<h2 id="start-coding_1">Start coding</h2>
+<p>The file should be named <code>nameofthelib_.py</code> (the “_” is VERY important!!)
+The file will be placed in the <code>lib_</code> folder in the Nougaro repository.</p>
+<p>Paste this generic code in your file:</p>
+<pre><code class="language-python"># -*- coding:utf-8 -*-
+&quot;&quot;&quot; YourModuleName module
+
+    YourModuleName is a module that do [...] and [...] and also [...].
+&quot;&quot;&quot;
+# IMPORTS
+# nougaro modules imports
+from lib_.lib_to_make_libs import *  # useful stuff to make libs.
+# built-in python imports
+# here put the useful python imports your module will need ;)
+
+__LIB_VERSION__ = 4
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lib versions depending on Nougaro versions:</p>
+<ul>
+<li>prior to 0.20.0: <code>1</code></li>
+<li>0.20.0: <code>2</code></li>
+<li>0.21.0: <code>3</code></li>
+<li>0.22.0-0.23.0: <code>4</code></li>
+</ul>
+</div>
+<h3 id="lib-with-constants">Lib with constants</h3>
+<p>If your lib contains constants, you can add them to the code, outside any class.</p>
+<p>Use <code>py2noug</code> function imported from <code>lib_to_make_libs</code> to convert Python values to Nougaro values.</p>
+<p>Python types that can be converted into Nougaro values are: <code>str</code>, <code>int</code>, <code>float</code>, <code>bool</code> (which is converted to 0 or 1), <code>list</code>, <code>tuple</code> (converted into list), <code>dict</code> (converted into a list of lists, each sub-list is <code>[key, value]</code>), <code>None</code>. Other types will return generic value <code>Value</code>, which you can't make anything with...</p>
+<p>Example:</p>
+<pre><code class="language-python">AMAZING_CONSTANT = py2noug(3, *default_pos())   # will be Number(3), type 'int'
+ANOTHER_AMAZING_CONSTANT = py2noug(&quot;Hello world :)&quot;, *default_pos())  # will be String(&quot;Hello world :)&quot;), type 'str'
+</code></pre>
+<p>(<code>py2noug</code> and <code>default_pos</code> are imported from <code>lib_to_make_libs</code>)</p>
+<h3 id="lib-with-functions">Lib with functions</h3>
+<p>If you want functions in your lib, paste this code in your file (replace the generic names/texts with appropriate things):</p>
+<pre><code class="language-python">class YourModuleName(ModuleFunction):
+    &quot;&quot;&quot; YourModuleName Module &quot;&quot;&quot;
+    functions: dict[str, builtin_function_dict] = {}
+
+    def __init__(self, function_name: str):
+        super().__init__(&quot;your_module_name&quot;, function_name, &quot;https://link_to_report_bugs.com (not required)&quot;, functions=self.functions)
+
+    def copy(self):
+        &quot;&quot;&quot;Return a copy of self&quot;&quot;&quot;
+        copy = YourModuleName(self.name)
+        return self.set_context_and_pos_to_a_copy(copy)
+
+    def is_eq(self, other: Value):
+        return isinstance(other, YourModuleName) and self.name == other.name
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Changed in 0.20.0-beta</p>
+<p>Prior to 0.20.0, the method <code>is_eq</code> was named <code>get_comparison_eq</code> and had this syntax:</p>
+<pre><code>def get_comparison_eq(self, other: Value):
+    if isinstance(other, YourModuleName):
+        return Number(self.name == other.name, self.pos_start, other.pos_end).set_context(self.context), None
+    return Number(False, self.pos_start, other.pos_end).set_context(self.context), None
+</code></pre>
+</div>
+<p>Then, to add a function, add a method in this class following this syntax:</p>
+<pre><code class="language-python">    def execute_function_name(self, context: Context):
+        &quot;&quot;&quot; Docstring (optional) &quot;&quot;&quot;
+        assert context.symbol_table is not None
+        ...
+
+    functions[&quot;function_name&quot;] = {
+        &quot;function&quot;: execute_function_name,
+        &quot;param_names&quot;: [&quot;parameter_1&quot;, &quot;parameter_2&quot;],
+        &quot;optional_params&quot;: [&quot;optional_parameter_1&quot;],
+        &quot;should_respect_args_number&quot;: True,
+        # The two following values are used internally.
+        # They are not documented, don’t set them to True except if you know what you’re doing.
+        &quot;run_noug_dir&quot;: False,
+        &quot;noug_dir&quot;: False
+    }
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Changed in 0.22.0-beta</p>
+<p>Prior to 0.22.0-beta, the key <code>"run_noug_dir"</code> was called <code>"run_noug_dir_work_dir"</code>.</p>
+</div>
+<ul>
+<li>keys <code>param_names</code> and <code>optional_params</code> should be of type <code>list[str]</code>.</li>
+<li><code>should_respect_args_number</code> is a bool. It is <code>True</code> when the number of given arguments should match with the number of parameters, and <code>False</code> if not.</li>
+</ul>
+<p>You can then add code in your function.</p>
+<h3 id="get-arguments">Get arguments</h3>
+<p>To get the arguments given by the user in your functions, use</p>
+<pre><code class="language-python">    context.symbol_table.getf(&quot;identifier&quot;)
+</code></pre>
+<p>Replace the identifier by the one you given to the parameter.</p>
+<p>If your parameter is optional and that the user didn’t specified it, the default value is a Python <code>None</code> (not a Nougaro <code>NoneValue</code>).</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Please don’t use <code>.get</code> symbol table method, it does NOT work in modules (even if it looks like) and should NOT be used. (The short explanation why is that this method looks for the name also in parent symbol table, so if an optional param is not given but the user defined a variable with that name, it will be taken as the value for that param, which is not what we want. We don’t care about parent symbol table, so we just look in the current symbol table which only contains the parameters. The corresponding issue is <a href="https://github.com/jd-develop/nougaro/issues/10">#10</a>.)</p>
+</div>
+<h3 id="values">Values</h3>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>You often have to switch between Nougaro and Python values! To convert python to Nougaro values, use <code>py2noug</code> function. To convert Nougaro to python values, use <code>noug2py</code>. Both functions are imported from <code>lib_to_make_libs</code>. You reed a position with <code>py2noug</code>: you can simply put <code>self.pos_start</code> and <code>self.pos_end</code> or the position of any value you want.</p>
+</div>
+<h3 id="what-to-return-values-and-errors">What to return? Values and errors.</h3>
+<p>If you don't need to return anything, simply use <code>return RTResult().success(NoneValue(*default_pos(), False))</code>.</p>
+<h4 id="return-errors">Return errors</h4>
+<p>Oops! It crashed! How to say it to the user under a good shape?
+Simply use this syntax:</p>
+<pre><code class="language-python">    return RTResult().failure(NameOfTheError(
+        self.pos_start, self.pos_end,
+        &quot;error message.&quot;,
+        context
+    ))
+</code></pre>
+<p>If the user gave you a value with an incorrect type, use:</p>
+<pre><code class="language-python">    return RTResult().failure(RTTypeErrorF(
+        bad_argument.pos_start, bad_argument.pos_end,
+        &quot;first/second/third…&quot;, &quot;name of the module.name of the function&quot;, &quot;type that should be found&quot;, bad_argument,
+        context
+    ))
+</code></pre>
+<p>Replace <code>"first/second/third…"</code> by the actual index of the argument. If it is the first argument, put <code>"first"</code>, et cætera. The error will print, for instance, <code>second argument of builtin function 'name of the function' should be 'type that should be found', not 'type of (bad_argument)'.</code></p>
+<p>You can replace <code>self</code> by any Nougaro value, such as your arguments.</p>
+<p>For example, in the lib <code>math</code>:</p>
+<pre><code class="language-python">    if value.value &lt; 0:  # we check if the value is greater than (or equal to) 0
+        return RTResult().failure(RTArithmeticError(
+            value.pos_start, value.pos_end,
+            &quot;first argument of the built-in function 'math.sqrt' must be greater than (or equal to) 0.&quot;,
+            exec_context, &quot;lib_.math_.Math.execute_math_sqrt&quot;
+        ))
+</code></pre>
+<p>All the errors available in a Module:</p>
+<ul>
+<li><code>RunTimeError</code>: basic run-time error</li>
+<li><code>RTIndexError</code>: IndexError</li>
+<li><code>RTArithmeticError</code>: ArithmeticError</li>
+<li><code>RTNotDefinedError</code>: NotDefinedError</li>
+<li><code>RTTypeErrorF</code>: TypeError (you give a Number but you need a String)</li>
+<li><code>RTFileNotFoundError</code>: FileNotFoundError</li>
+<li><code>RTAssertionError</code>: AssertionError (not useful in libs...)</li>
+<li><code>RTAttributeError</code>: AttributeError</li>
+<li><code>RTOverflowError</code>: OverflowError</li>
+<li><code>RTRecursionError</code>: RecursionError (new in 0.20.0)</li>
+<li><code>PythonError</code>: PythonError: an error due to Python. Don’t put a str error message: pass directly the Python Exception.</li>
+</ul>
+<h4 id="return-values">Return values</h4>
+<p>To return a <em>Nougaro</em> value, use</p>
+<pre><code class="language-python">return RTResult().success(value)
+</code></pre>
+<p>To return a <em>Python</em> value, use</p>
+<pre><code class="language-python">return RTResult().success(py2noug(value, self.pos_start, self.pos_end))
+</code></pre>
+<h2 id="what_to_import-do-not-forget-that-one"><code>WHAT_TO_IMPORT</code> : DO NOT forget that one!!</h2>
+<p>When you have finished coding your amazing lib, create the <code>WHAT_TO_IMPORT</code> dict. It tells to the Nougaro Interpreter what should be imported and with which name. Follow this syntax:</p>
+<pre><code class="language-python">WHAT_TO_IMPORT = {
+    &quot;name_of_a_constant&quot;: IDENTIFIER,
+    &quot;name_of_a_function&quot;: YourModuleName('function_name'),
+}
+</code></pre>
+<p>The function name is what you specified as the key of the <code>functions</code> dictionary.</p>
+<h2 id="custom-errors">Custom errors</h2>
+<p>To use a custom error in your code, simply copy-paste this code:</p>
+<pre><code class="language-python">class YourErrorName(RunTimeError):
+    &quot;&quot;&quot;YourErrorName is an error that can be triggered ONLY via functions in this module.&quot;&quot;&quot;
+    def __init__(self, pos_start: Position, pos_end: Position, details: str, context: Context, origin_file: str = &quot;lib_.(nameofthelib)_&quot;):
+        super().__init__(pos_start, pos_end, details, context, rt_error=False, error_name=&quot;YourErrorName&quot;, origin_file=origin_file)
+</code></pre>
+<p>Then, call it like any other errors (like <a href="https://github.com/jd-develop/nougaro/wiki/Write-libs#what-to-return-values-and-errors">this</a>)</p>
+<p>Note: <code>origin_file</code> is used for debugging. To trigger it, you can run:</p>
+<pre><code class="language-nougaroshell">nougaro&gt; import debug;debug.enable()
+DEBUG mode is now ENABLED.
+[&lt;module debug&gt;, None]
+nougaro&gt; (anything that throws an error)
+</code></pre>
+<p>Example:</p>
+<pre><code class="language-nougaroshell">nougaro&gt; import debug;debug.enable()
+DEBUG mode is now ENABLED.
+[&lt;module debug&gt;, None]
+nougaro&gt; thisisnotdefined
+[identifier:&quot;thisisnotdefined&quot;, end of file]
+list:[(var_access:[identifier:&quot;thisisnotdefined&quot;], False)]
+(from src.runtime.interpreter.Interpreter.visit_VarAccessNode (is NOT lib and close match in symbol table))
+Traceback (most recent call last):
+ In file &lt;stdin&gt;, line 1, in &lt;program&gt;:
+
+        thisisnotdefined
+        ^^^^^^^^^^^^^^^^
+ NotDefinedError: name 'thisisnotdefined' is not defined. Did you mean 'is_none'?
+nougaro&gt; this is a syntax error
+[identifier:&quot;this&quot;, identifier:&quot;is&quot;, identifier:&quot;a&quot;, identifier:&quot;syntax&quot;, identifier:&quot;error&quot;, end of file]
+(from src.parser.parser.Parser.statements)
+In file &lt;stdin&gt;, line 1: 
+        this is a syntax error
+             ^^
+ InvalidSyntaxError: unexpected token: identifier:&quot;is&quot;.
+nougaro&gt;
+</code></pre>
+<p>Here, <code>origin_file</code> is <code>src.runtime.interpreter.Interpreter.visit_VarAccessNode</code> and <code>src.parser.parser.Parser.parse</code>.</p>
+<h3 id="example-rtstatisticserror-in-built-in-lib-statistics">Example: <code>RTStatisticsError</code> in built-in lib <code>statistics</code></h3>
+<pre><code class="language-python">class RTStatisticsError(RunTimeError):
+    &quot;&quot;&quot;StatisticsError is an error that can be triggered ONLY via functions in this module.&quot;&quot;&quot;
+    def __init__(self, pos_start: Position, pos_end: Position, details: str, context: Context,
+                 origin_file: str = &quot;lib_.statistics_&quot;):
+        super().__init__(pos_start, pos_end, details, context, rt_error=False, error_name=&quot;StatisticsError&quot;,
+                         origin_file=origin_file)
+</code></pre>
+<h2 id="examples">Examples</h2>
+<p>You can read builtin files stored in <code>lib_</code> folder to make you a good idea of what a nice-coded lib is ;)</p>
+<h2 id="here-you-go">Here you go!</h2>
+<p>If you think that your lib is absolutely awesome, you can open a <a href="https://github.com/jd-develop/nougaro/pulls">PR</a> to submit your idea. The best ideas will be implemented into vanilla Nougaro! If you think that this document is incomplete, that it didn’t help you, or just to find some help, open an <a href="https://github.com/nougaro/nougaro.github.io/issues/new">issue</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
