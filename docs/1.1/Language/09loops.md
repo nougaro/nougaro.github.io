@@ -2,11 +2,12 @@
 
 Loops are made to execute the same piece of code multiple times in a row. Here is a list of available loops in Nougaro:
 
-| Nougaro                         | Python    | C/C++               |
-|---------------------------------|-----------|---------------------|
-| [`for`](#for)                   | `for`     | `for`               |
-| [`while`](#while)               | `while`   | `while`             |
-| [`do ... then loop while`](#do) | (nothing) | `do ... while`      |
+| Nougaro                         | Python       | C/C++               |
+|---------------------------------|--------------|---------------------|
+| [`for`](#for)                   | `for`        | `for`               |
+| [`while`](#while)               | `while`      | `while`             |
+| [`do ... then loop while`](#do) | (nothing)    | `do ... while`      |
+| [`loop`](#loop)                 | `while True` | `while (1)`
 
 ## `for`
 The for loop can have two usages: browse every element in a [list](06values.md#lists) (or a [str](06values.md#strings)), or iterate a certain number of times.
@@ -79,6 +80,24 @@ do
     ...
 then loop while condition
 ```
+
+## `loop`
+!!! note "Added in 1.1.0"
+    The `loop` loop was added in 1.1.0
+
+The `loop` loop is an infinite loop. It has the following syntax:
+```nougaro
+# One line
+loop ...
+
+# Multible lines
+loop
+    ...
+    ...
+end
+```
+
+The `loop` loop stops whenever it encounters a `break` (like every other loop)
 
 ## Labels
 !!! note "Added in 0.20.0-beta"

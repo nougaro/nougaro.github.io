@@ -715,6 +715,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#loop" class="nav-link">loop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#labels" class="nav-link">Labels</a>
               <ul class="nav flex-column">
               </ul>
@@ -755,6 +759,11 @@
 <td><a href="#do"><code>do ... then loop while</code></a></td>
 <td>(nothing)</td>
 <td><code>do ... while</code></td>
+</tr>
+<tr>
+<td><a href="#loop"><code>loop</code></a></td>
+<td><code>while True</code></td>
+<td><code>while (1)</code></td>
 </tr>
 </tbody>
 </table>
@@ -816,6 +825,22 @@ do
     ...
 then loop while condition
 </code></pre>
+<h2 id="loop"><code>loop</code></h2>
+<div class="admonition note">
+<p class="admonition-title">Added in 1.1.0</p>
+<p>The <code>loop</code> loop was added in 1.1.0</p>
+</div>
+<p>The <code>loop</code> loop is an infinite loop. It has the following syntax:</p>
+<pre><code class="language-nougaro"># One line
+loop ...
+
+# Multible lines
+loop
+    ...
+    ...
+end
+</code></pre>
+<p>The <code>loop</code> loop stops whenever it encounters a <code>break</code> (like every other loop)</p>
 <h2 id="labels">Labels</h2>
 <div class="admonition note">
 <p class="admonition-title">Added in 0.20.0-beta</p>
