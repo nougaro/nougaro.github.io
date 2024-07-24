@@ -49,6 +49,19 @@ etc.
 ## Behaviour
 The condition is checked. If it is true, the expression in the `if` branch is executed. Otherwise, Nougaro checks for an `elif` branch. If it exists, it re-checks the condition, etc. If none of the conditions is true and that there is an `else` branch, the expression in the `else` branch is executed. If there is no `else` branch, nothing is executed.
 
+### Dangling-else ambiguity
+When Nougaro encounters a 'dangling else', such as in this case:
+```nougaro
+if a then if b then foo() else bar()
+```
+
+then the `else` is attributed to the closest `if`. In this case, the `else` will be part of the `if b`.
+
+If you want the `else` to be part of the `if a` statement, simply use parenthesis:
+```nougaro
+if a then (if b then foo()) else bar()
+```
+
 ## Logicals constants
 
 | Nougaro   | Python    | Comments                        |

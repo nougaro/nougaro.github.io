@@ -801,6 +801,14 @@ end
 <p>etc.</p>
 <h2 id="behaviour">Behaviour</h2>
 <p>The condition is checked. If it is true, the expression in the <code>if</code> branch is executed. Otherwise, Nougaro checks for an <code>elif</code> branch. If it exists, it re-checks the condition, etc. If none of the conditions is true and that there is an <code>else</code> branch, the expression in the <code>else</code> branch is executed. If there is no <code>else</code> branch, nothing is executed.</p>
+<h3 id="dangling-else-ambiguity">Dangling-else ambiguity</h3>
+<p>When Nougaro encounters a 'dangling else', such as in this case:</p>
+<pre><code class="language-nougaro">if a then if b then foo() else bar()
+</code></pre>
+<p>then the <code>else</code> is attributed to the closest <code>if</code>. In this case, the <code>else</code> will be part of the <code>if b</code>.</p>
+<p>If you want the <code>else</code> to be part of the <code>if a</code> statement, simply use parenthesis:</p>
+<pre><code class="language-nougaro">if a then (if b then foo()) else bar()
+</code></pre>
 <h2 id="logicals-constants">Logicals constants</h2>
 <table>
 <thead>
