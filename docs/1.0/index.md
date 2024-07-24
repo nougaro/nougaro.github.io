@@ -1,6 +1,6 @@
 # Nougaro 1.0 documentation
 
-This is the official documentation for Nougaro version 1.0.0-rc.2.
+This is the official documentation for Nougaro version 1.0.0.
 
 * [Hello, world!](hello_world.md)
 * Language reference: syntax, statements, …
