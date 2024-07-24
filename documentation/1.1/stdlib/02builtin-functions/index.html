@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Jean Dubois">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>List of built-in functions - Nougaro Documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Nougaro Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Welcome to the Nougaro documentation</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">0.22</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../0.22/" class="dropdown-item">Nougaro 0.22.0-beta documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../../0.22/hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../../0.22/internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.22/Expanding/Write-libs/" class="dropdown-item">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.22/Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.22/stdlib/01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/02builtin-functions/" class="dropdown-item">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../../../0.22/stdlib/modules/webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">0.23</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../0.23/" class="dropdown-item">Nougaro 0.23.0-beta documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../../0.23/hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../../0.23/internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.23/Expanding/Write-libs/" class="dropdown-item">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.23/Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.23/stdlib/01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/02builtin-functions/" class="dropdown-item">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../../../0.23/stdlib/modules/webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">1.0</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../1.0/" class="dropdown-item">Nougaro 1.0 documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../../1.0/hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../../1.0/internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../1.0/Expanding/Write-libs/" class="dropdown-item">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../1.0/Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../1.0/stdlib/01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/stdlib/02builtin-functions/" class="dropdown-item">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../1.0/stdlib/modules/" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/stdlib/modules/debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/stdlib/modules/lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/stdlib/modules/math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/stdlib/modules/noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/stdlib/modules/random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/stdlib/modules/statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/stdlib/modules/time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/stdlib/modules/unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../../../1.0/stdlib/modules/webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">1.1</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Nougaro 1.1 documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../hello_world/" class="dropdown-item">Hello, world!</a>
+</li>
+                                    
+<li>
+    <a href="../../internals/" class="dropdown-item">Internals</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Expanding</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Expanding/Write-libs/" class="dropdown-item">Write libs</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Language</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Language/01syntax/" class="dropdown-item">Very basic syntax</a>
+</li>
+            
+<li>
+    <a href="../../Language/02number_literals/" class="dropdown-item">Number literals</a>
+</li>
+            
+<li>
+    <a href="../../Language/03string_literals/" class="dropdown-item">String literals</a>
+</li>
+            
+<li>
+    <a href="../../Language/04identifiers_and_keywords/" class="dropdown-item">Identifiers and keywords</a>
+</li>
+            
+<li>
+    <a href="../../Language/05operators/" class="dropdown-item">Operators</a>
+</li>
+            
+<li>
+    <a href="../../Language/06values/" class="dropdown-item">Values</a>
+</li>
+            
+<li>
+    <a href="../../Language/07variables/" class="dropdown-item">Variables</a>
+</li>
+            
+<li>
+    <a href="../../Language/08tests/" class="dropdown-item">Test statements</a>
+</li>
+            
+<li>
+    <a href="../../Language/09loops/" class="dropdown-item">Loops</a>
+</li>
+            
+<li>
+    <a href="../../Language/10functions/" class="dropdown-item">Functions</a>
+</li>
+            
+<li>
+    <a href="../../Language/11attributes/" class="dropdown-item">Attributes</a>
+</li>
+            
+<li>
+    <a href="../../Language/12classes/" class="dropdown-item">Classes and objects</a>
+</li>
+            
+<li>
+    <a href="../../Language/13read_and_write_files/" class="dropdown-item">Read and write in files</a>
+</li>
+            
+<li>
+    <a href="../../Language/14import/" class="dropdown-item">Import and export</a>
+</li>
+            
+<li>
+    <a href="../../Language/15metas/" class="dropdown-item">Metas</a>
+</li>
+            
+<li>
+    <a href="../../Language/16dollar_print/" class="dropdown-item">Dollar-print syntax</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Stdlib</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../01builtin-variables/" class="dropdown-item">List of built-in variables</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">List of built-in functions</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Modules</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../modules/" class="dropdown-item">Modules</a>
+</li>
+            
+<li>
+    <a href="../modules/debug/" class="dropdown-item">Debug</a>
+</li>
+            
+<li>
+    <a href="../modules/lorem/" class="dropdown-item">Lorem</a>
+</li>
+            
+<li>
+    <a href="../modules/math/" class="dropdown-item">Math</a>
+</li>
+            
+<li>
+    <a href="../modules/noug_version/" class="dropdown-item">Noug Version</a>
+</li>
+            
+<li>
+    <a href="../modules/random/" class="dropdown-item">Random</a>
+</li>
+            
+<li>
+    <a href="../modules/statistics/" class="dropdown-item">Statistics</a>
+</li>
+            
+<li>
+    <a href="../modules/time/" class="dropdown-item">Time</a>
+</li>
+            
+<li>
+    <a href="../modules/unicodedata/" class="dropdown-item">Unicodedata</a>
+</li>
+            
+<li>
+    <a href="../modules/webbrowser/" class="dropdown-item">Webbrowser</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../01builtin-variables/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../modules/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#list-of-built-in-functions" class="nav-link">List of built-in functions</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#inputoutput" class="nav-link">Input/Output</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#types" class="nav-link">Types</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#type-conversions" class="nav-link">Type conversions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#string-and-lists-operators" class="nav-link">String and lists operators</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#number-operators" class="nav-link">Number operators</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#characters-and-unicode" class="nav-link">Characters and Unicode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#license" class="nav-link">License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#files" class="nav-link">Files</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#technical" class="nav-link">Technical</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mathematical-functions" class="nav-link">Mathematical functions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="list-of-built-in-functions">List of built-in functions</h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this page, type of parameters are noted using the <code>param: type</code> syntax (type can eventually be <code>Any</code>), and optional parameters are noted between <code>&lt;&gt;</code> and their default value are specified with <code>=</code>.
+Also, <code>*args</code> tells that this function can take any number of arguments.</p>
+</div>
+<h2 id="inputoutput">Input/Output</h2>
+<h3 id="print"><code>print</code></h3>
+<p>Syntax: <code>print(str: str)</code>.</p>
+<p>Prints <code>str</code> in console. Returns None. Example: <code>print("hello, world!")</code>.</p>
+<h3 id="print_ret"><code>print_ret</code></h3>
+<p>Syntax: <code>print_ret(str: str)</code>.</p>
+<p>Prints <code>str</code> in console and returns it. Example: <code>print_ret("hello, world!")</code>.</p>
+<h3 id="print_in_red"><code>print_in_red</code></h3>
+<p>Syntax: <code>print_in_red(str: str)</code>.</p>
+<p>Prints str in red in console. Returns None. Example: <code>print_in_red("Error: this error is RED")</code>.</p>
+<h3 id="print_in_red_ret"><code>print_in_red_ret</code></h3>
+<p>Syntax: <code>print_in_red_ret(str: str)</code>.</p>
+<p>Prints str in red in console and returns it. Example: <code>print_in_red_ret("Error: this error is RED and returned")</code></p>
+<h3 id="print_in_green"><code>print_in_green</code></h3>
+<p>Syntax: <code>print_in_green(str: str)</code>.</p>
+<p>Prints str in green in console. Returns None. Example: <code>print_in_green("Info: this info is GREEN")</code>.</p>
+<h3 id="print_in_green_ret"><code>print_in_green_ret</code></h3>
+<p>Syntax: <code>print_in_green_ret(str: str)</code>.</p>
+<p>Prints str in green in console and returns it. Example: <code>print_in_green_ret("Info: this info is GREEN and returned")</code></p>
+<h3 id="input"><code>input</code></h3>
+<p>Syntax: <code>input(&lt;text_to_display: str = ""&gt;)</code>.</p>
+<p>Inputs a str. If <code>text_to_display</code> is specified, it is printed as a prompt.</p>
+<h3 id="input_int"><code>input_int</code></h3>
+<p>Syntax: <code>input_int(&lt;text_to_display: str = ""&gt;)</code>.</p>
+<p>Inputs an int. If <code>text_to_display</code> is specified, it is printed as a prompt.</p>
+<h3 id="input_num"><code>input_num</code></h3>
+<p>Syntax: <code>input_num(&lt;text_to_display: str = ""&gt;)</code>.</p>
+<p>Inputs an int or a float. If <code>text_to_display</code> is specified, it is printed as a prompt.</p>
+<h2 id="types">Types</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Python <code>isinstance()</code> returns <code>True</code> if <code>value</code> is an object of the given type.</p>
+</div>
+<h3 id="type"><code>type</code></h3>
+<p>Syntax: <code>type(value: Any)</code></p>
+<p>Returns a str of the internal type of the value. It can be <code>str</code>, <code>int</code>, <code>float</code>, <code>list</code>, <code>func</code>, <code>module</code>, ...</p>
+<h3 id="is_int"><code>is_int</code></h3>
+<p>Syntax: <code>is_int(value: Any)</code></p>
+<p>Returns <code>True</code> if <code>value</code> is an <a href="../../Language/06values/#numbers">integer</a>, <code>False</code> if it is not. Corresponds to <code>isinstance(value, int)</code>.</p>
+<h3 id="is_float"><code>is_float</code></h3>
+<p>Syntax: <code>is_float(value: Any)</code></p>
+<p>Returns <code>True</code> if <code>value</code> is a <a href="../../Language/06values/#numbers">float</a>, <code>False</code> if it is not. Corresponds to <code>isinstance(value, float)</code>.</p>
+<h3 id="is_num"><code>is_num</code></h3>
+<p>Syntax: <code>is_num(value: Any)</code></p>
+<p>Returns <code>True</code> if <code>value</code> is a <a href="../../Language/06values/#numbers">number</a>, <code>False</code> if it is not. Corresponds to <code>isinstance(value, float) or isinstance(value, int)</code>.</p>
+<h3 id="is_str"><code>is_str</code></h3>
+<p>Syntax: <code>is_str(value: Any)</code></p>
+<p>Returns <code>True</code> if <code>value</code> is a <a href="../../Language/06values/#strings">string</a>, <code>False</code> if it is not. Corresponds to <code>isinstance(value, str)</code>.</p>
+<h3 id="is_list"><code>is_list</code></h3>
+<p>Syntax: <code>is_list(value: Any)</code></p>
+<p>Returns <code>True</code> if <code>value</code> is a <a href="../../Language/06values/#lists">list</a>, <code>False</code> if it is not. Corresponds to <code>isinstance(value, list)</code>.</p>
+<h3 id="is_func"><code>is_func</code></h3>
+<p>Syntax: <code>is_func(value: Any)</code></p>
+<p>Returns <code>True</code> if <code>value</code> is a <a href="../../Language/10functions/">function</a>, <code>False</code> if it is not. Corresponds to <code>isinstance(value, BaseFunction)</code> where <code>BaseFunction</code> is function, method and builtin function.</p>
+<h3 id="is_module"><code>is_module</code></h3>
+<p>Syntax: <code>is_module(value: Any)</code></p>
+<p>Returns <code>True</code> if <code>value</code> is a <a href="../../Language/06values/#modules">module</a>, <code>False</code> if it is not. Corresponds to <code>isinstance(value, module)</code>. Example: <code>import math; is_module(math)</code> will be <code>True</code>, but <code>is_module(3.2)</code> will be <code>False</code>.</p>
+<h3 id="is_none"><code>is_none</code></h3>
+<p>Syntax: <code>is_none(value: Any)</code></p>
+<p>Returns <code>True</code> if <code>value</code> is <a href="../../Language/06values/#none"><code>None</code></a>, <code>False</code> if it is not. Corresponds to <code>isinstance(value, NoneValue)</code> or <code>value is None</code>.</p>
+<h3 id="is_constructor"><code>is_constructor</code></h3>
+<div class="admonition info">
+<p>Added in 0.20.0-beta</p>
+</div>
+<p>Syntax: <code>is_constructor(value: Any)</code></p>
+<p>Returns <code>True</code> if <code>value</code> is a <a href="../../Language/12classes/#constructor-value">constructor</a>, <code>False</code> if it is not. Corresponds to <code>isinstance(value, Constructor)</code>.</p>
+<h3 id="is_object"><code>is_object</code></h3>
+<div class="admonition info">
+<p>Added in 0.20.0-beta</p>
+</div>
+<p>Syntax: <code>is_object(value: Any)</code></p>
+<p>Returns <code>True</code> if <code>value</code> is an <a href="../../Language/12classes/#object">object</a>, <code>False</code> if it is not. Corresponds to <code>isinstance(value, object)</code>. Note: in Nougaro, everything is not an object!</p>
+<h2 id="type-conversions">Type conversions</h2>
+<h3 id="str"><code>str</code></h3>
+<p>Syntax: <code>str(value: Any)</code></p>
+<p>Converts value to <a href="../../Language/06values/#strings">string</a> (may return an error).</p>
+<h3 id="int"><code>int</code></h3>
+<p>Syntax: <code>str(value: Any)</code></p>
+<p>Converts value to <a href="../../Language/06values/#numbers">int</a> (may return an error).</p>
+<h3 id="float"><code>float</code></h3>
+<p>Syntax: <code>str(value: Any)</code></p>
+<p>Converts value to <a href="../../Language/06values/#numbers">float</a> (may return an error).</p>
+<h3 id="list"><code>list</code></h3>
+<p>Syntax: <code>str(value: Any)</code></p>
+<p>Converts value to <a href="../../Language/06values/#lists">list</a> (may return an error).</p>
+<h2 id="string-and-lists-operators">String and lists operators</h2>
+<h3 id="upper"><code>upper</code></h3>
+<p>Syntax: <code>upper(value: str)</code></p>
+<p>Returns upper-cased string. Example: <code>upper('nougaro')</code> returns <code>'NOUGARO'</code>.</p>
+<h3 id="lower"><code>lower</code></h3>
+<p>Syntax: <code>lower(value: str)</code></p>
+<p>Returns lower-cased string. Example: <code>lower('NOUGARO')</code> returns <code>'nougaro'</code>.</p>
+<h3 id="split"><code>split</code></h3>
+<p>Syntax: <code>split(value: str, &lt;char: str = " "&gt;)</code></p>
+<p>Returns splitted string. For example, <code>split('a b c')</code> returns <code>['a', 'b', 'c']</code> ; <code>split('a b c', 'b')</code> returns <code>['a ', ' c']</code>.</p>
+<h3 id="startswith"><code>startswith</code></h3>
+<p>Syntax: <code>startswith(value: str, substring: str)</code></p>
+<p>Returns True if <code>value</code> starts with <code>substring</code>. Example: <code>"nougaro"</code> starts with <code>"noug"</code>, but <code>"canal du midi"</code> does not start with <code>"minimes"</code>.</p>
+<h3 id="endswith"><code>endswith</code></h3>
+<p>Syntax: <code>endswith(value: str, substring: str)</code></p>
+<p>Returns True if <code>value</code> ends with <code>substring</code>. Example: <code>"nougaro"</code> ends with <code>"garo"</code>, but <code>"canal du midi"</code> does not end with <code>"minimes"</code>.</p>
+<h3 id="len"><code>len</code></h3>
+<p>Syntax: <code>len(value: list | str)</code></p>
+<p>Returns the number of elements in a list (i.e. its length), or the number of chars in a str.</p>
+<h3 id="reverse"><code>reverse</code></h3>
+<p>Syntax: <code>reverse(value: list | str)</code></p>
+<p>Reverses list or string <code>value</code> by reference and returns the result. Example: <code>reverse([1, 2, 3])</code> is <code>[3, 2, 1]</code>.</p>
+<h3 id="append"><code>append</code></h3>
+<p>Syntax: <code>append(list: list, value: Any)</code></p>
+<p>Appends value at the end of the list. Returns a list. If the list is a variable, edits the variable.</p>
+<h3 id="pop"><code>pop</code></h3>
+<p>Syntax: <code>pop(list: list, &lt;index: int = -1&gt;)</code>:</p>
+<p>Deletes value at given index. Returns the popped element. If the list is a variable, edits the variable. If <code>index</code> is not given, the last element of the list is popped.</p>
+<h3 id="insert"><code>insert</code></h3>
+<p>Syntax: <code>insert(list: list, value: Any, &lt;index: int = -1&gt;)</code></p>
+<p>Inserts value at the given index in the list.</p>
+<h3 id="replace"><code>replace</code></h3>
+<p>Syntax: <code>replace(list: list, index: int, value: Any)</code></p>
+<p>Replaces value at the given index in the list.</p>
+<h3 id="extend"><code>extend</code></h3>
+<p>Syntax: <code>extend(list1: list, list2: list, &lt;remove_duplicates: int = False&gt;)</code></p>
+<p>Appends to <code>list1</code> the elements of <code>list2</code>. Returns <code>list1</code>. If <code>list1</code> is a variable, edits the variable. If <code>remove_duplicates</code> is True, removes the <code>list2</code> elements already in <code>list1</code> before extending.</p>
+<h3 id="get"><code>get</code></h3>
+<p>Syntax: <code>get(list: list, index: int)</code></p>
+<p>Returns the element of the list at the given index.</p>
+<h3 id="max"><code>max</code></h3>
+<p>Syntax: <code>max(list: list, &lt;ignore_not_num: int = False&gt;)</code></p>
+<p>Returns the maximum element of the list. Ignores elements that are not numbers if <code>ignore_not_num</code> is <code>True</code>, otherwise crashes if such element exists.</p>
+<h3 id="min"><code>min</code></h3>
+<p>Syntax: <code>min(list: list, &lt;ignore_not_num: int = False&gt;)</code></p>
+<p>Returns the minimum element of the list. Ignores elements that are not numbers if <code>ignore_not_num</code> is <code>True</code>, otherwise crashes if such element exists.</p>
+<h3 id="sort"><code>sort</code></h3>
+<p>Syntax: <code>sort(value: list, &lt;mode: str = "timsort"&gt;)</code></p>
+<p>Sorts list <code>value</code> according to mode <code>mode</code>. Available modes are: <code>timsort</code> (default), <code>stalin</code>, <code>sleep</code>, <code>miracle</code> and <code>panic</code>.</p>
+<ul>
+<li><code>timsort</code> is Python’s default algorithm</li>
+<li><code>stalin</code> sends to gulag values that are not sorted (i.e. pop them from the list). Example: <code>[1, 4, 3, 7, 6, 10, 2, 5, 23]</code> will be sorted as <code>[1, 4, 7, 10, 23]</code>.</li>
+<li><code>sleep</code>sort take only a list of positive integers. It starts as many threads as elements in the list, and each thread waits for as much seconds as the element. For instance, when the list <code>[5, 2, 3, 0]</code> is passed in sleepsort, it starts by launching 4 threads that wait for 5, 2, 3 and 0 seconds. When a thread finishes to wait, it append its element to the list. Use the mode <code>sleep-verbose</code> to see what’s happening.</li>
+<li><code>miracle</code>sort literally waits for a miracle. It checks if the list is sorted, and if it is not, it checks again. If a cosmic ray (or <a href="../../../miraclesort.webm">another miracle</a>) flips the right bits in your RAM so the list is sorted, miraclesort will return the sorted list.</li>
+<li><code>panic</code>sort checks if the list is sorted. If so, it returns it. If the list is not sorted, this causes an illegal hardware instruction (Unix and GNU/Linux) or a segfault (Windows).</li>
+</ul>
+<h2 id="number-operators">Number operators</h2>
+<h3 id="round"><code>round</code></h3>
+<p>Syntax: <code>round(number: int | float, &lt;n_digits: int = 0&gt;)</code></p>
+<p>Rounds <code>number</code> to the closest number with <code>n_digits</code> decimals. <code>n_digits</code> may be 0 or negative, in which case the returned type is <code>int</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">Changed in 0.22.0-beta</p>
+<p>The <code>round</code> built-in function previously returned <code>int</code> only when <code>n_digits</code> was 0 (now it is the case when <code>n_digits</code> ⩽ 0)</p>
+</div>
+<h2 id="characters-and-unicode">Characters and Unicode</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There’s more in the <a href="../modules/unicodedata/"><code>unicodedata</code></a> module.</p>
+</div>
+<h3 id="ord"><code>ord</code></h3>
+<p>Syntax: <code>ord(c: str)</code></p>
+<p>Returns an integer representing the Unicode code point of that <code>c</code>. <code>c</code> is a string with only one character. Ex: <code>ord('a')</code> returns <code>97</code> and <code>ord('€')</code> returns <code>8364</code>.</p>
+<h3 id="chr"><code>chr</code></h3>
+<p>Syntax: <code>chr(i: int)</code></p>
+<p>Returns the string representing the character whose Unicode code point is the integer <code>i</code>. For example, <code>chr(97)</code> returns the string <code>'a'</code>, and <code>chr(8364)</code> returns the string <code>'€'</code>.</p>
+<h2 id="license">License</h2>
+<h3 id="__gpl__"><code>__gpl__</code></h3>
+<p>Syntax: <code>__gpl__(&lt;print_in_term: int = False&gt;)</code></p>
+<p>If <code>print_in_term</code> is <code>True</code>, prints the General Public License 3.0 in the terminal. Otherwise, it opens the GPL in the default system program.</p>
+<h2 id="files">Files</h2>
+<h3 id="__path_exists__"><code>__path_exists__</code></h3>
+<p>Syntax: <code>path_exists(path: str)</code></p>
+<p>Returns <code>True</code> (<code>1</code>) if the path exists, <code>False</code> (<code>0</code>) otherwise.</p>
+<h2 id="technical">Technical</h2>
+<h3 id="exit"><code>exit</code></h3>
+<p>Syntax: <code>exit(&lt;stop_code: int | str = 0&gt;)</code></p>
+<p>Just quits the interpreter.</p>
+<h3 id="clear"><code>clear</code></h3>
+<p>Syntax: <code>clear()</code></p>
+<p>Clears the screen. Returns <a href="../../Language/06values/#none"><code>None</code></a>.</p>
+<h3 id="void"><code>void</code></h3>
+<p>Syntax: <code>void(*args)</code></p>
+<p>Does nothing. Returns <a href="../../Language/06values/#none"><code>None</code></a>.</p>
+<h3 id="run"><code>run</code></h3>
+<p>Syntax: <code>run(file_name: str)</code></p>
+<p>Executes the code in the file <code>file_name</code>.</p>
+<h3 id="example"><code>example</code></h3>
+<p>Syntax: <code>example(&lt;example_name: str | None = None&gt;, &lt;return_example_value: int = False&gt;)</code></p>
+<p>Executes the code in the file <code>examples/(example_name).noug</code>. If <code>example_name</code> is <code>None</code>, executes the code in the file <code>example.noug</code>.</p>
+<p>If <code>return_example_value</code> is <code>True</code>, returns the list value from the example execution.</p>
+<h3 id="system_call"><code>system_call</code></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This function may be dangerous, because <em>any</em> system command can be executed.</p>
+</div>
+<p>Syntax: <code>system_call(cmd: str)</code></p>
+<p>Calls <code>cmd</code>. Prints the result of the command and returnt the stop code as <a href="../../Language/06values/#strings">str</a>.</p>
+<h3 id="__python__"><code>__python__</code></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This function may be dangerous, because <em>any</em> Python code can be executed.</p>
+</div>
+<p>Syntax: <code>__python__(source: str)</code></p>
+<p>Runs Python’s <code>eval(source)</code>.</p>
+<h3 id="__is_keyword__"><code>__is_keyword__</code></h3>
+<p>Syntax: <code>__is_keyword__(word: str)</code></p>
+<p>Check if <code>word</code> is a valid Nougaro <a href="../../Language/04identifiers_and_keywords/#keywords">keyword</a>.</p>
+<h3 id="__is_valid_token_type__"><code>__is_valid_token_type__</code></h3>
+<p>Syntax: <code>__is_valid_token_type__(tok_type: str)</code></p>
+<p>Checks if <code>tok_type</code> is a valid Nougaro token type, such as 'EE' or 'BITWISENOT'.</p>
+<h3 id="__test__"><code>__test__</code></h3>
+<p>Syntax: <code>__test__(&lt;should_print_ok: int = False&gt;, &lt;should_i_return: int = False&gt;)</code></p>
+<p>Executes the test file for the Nougaro interpreter. If <code>should_print_ok</code> is <code>True</code>, prints “OK” each times a test was succesful. If <code>should_i_return</code> is true, returns the value of the interpreted file.</p>
+<h3 id="__py_type__"><code>__py_type__</code></h3>
+<p>Syntax: <code>__py_type__(value)</code></p>
+<p>Returns the string of Python’s <code>type(value)</code>. For instance, <code>__py_type__(__py_type__)</code> is <code>"&lt;class 'src.runtime.values.functions.builtin_function.BuiltInFunction'&gt;"</code></p>
+<h3 id="__how_many_lines_of_code__"><code>__how_many_lines_of_code__</code></h3>
+<p>Syntax: <code>__how_many_lines_of_code__(&lt;print_details: Any = True&gt;)</code></p>
+<p>Lets you know how many lines of code there are in Nougaro. If <code>print_details</code> is True, details how many lines of code they are in each file.</p>
+<h2 id="mathematical-functions">Mathematical functions</h2>
+<p>Please refer to <a href="../modules/math/">Math module</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
