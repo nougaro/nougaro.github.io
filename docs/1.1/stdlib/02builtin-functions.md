@@ -122,17 +122,17 @@ Syntax: `str(value: Any)`
 Converts value to [string](../Language/06values.md#strings) (may return an error).
 
 ### `int`
-Syntax: `str(value: Any)`
+Syntax: `int(value: Any)`
 
 Converts value to [int](../Language/06values.md#numbers) (may return an error).
 
 ### `float`
-Syntax: `str(value: Any)`
+Syntax: `float(value: Any)`
 
 Converts value to [float](../Language/06values.md#numbers) (may return an error).
 
 ### `list`
-Syntax: `str(value: Any)`
+Syntax: `list(value: Any)`
 
 Converts value to [list](../Language/06values.md#lists) (may return an error).
 
