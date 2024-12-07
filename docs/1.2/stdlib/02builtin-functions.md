@@ -221,8 +221,8 @@ Syntax: `sort(value: list, <mode: str = "timsort">)`
 
 Sorts list `value` according to mode `mode`. Lefts the original list unchanged
 and returns a new list.
-Available modes are: `timsort` (default), `miracle`, `panic`, `sleep`, `slow`
-and `stalin`.
+Available modes are: `timsort` (default), `bogo`, `miracle`, `panic`, `sleep`,
+`slow` and `stalin`.
 
 * `timsort` is Python’s default algorithm
 * [`bogo`sort](https://en.wikipedia.org/Bogosort) randomly shuffles the list
