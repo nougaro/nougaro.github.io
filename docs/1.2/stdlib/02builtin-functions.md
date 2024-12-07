@@ -216,8 +216,8 @@ Returns the minimum element of the list. Ignores elements that are not numbers i
 ### `sort`
 Syntax: `sort(value: list, <mode: str = "timsort">)`
 
-!!! info
-    * Slowsort was added in 1.2.0
+!!! note
+    * Slowsort and bogosort were added in 1.2.0
 
 Sorts list `value` according to mode `mode`. Lefts the original list unchanged
 and returns a new list.
@@ -225,6 +225,8 @@ Available modes are: `timsort` (default), `miracle`, `panic`, `sleep`, `slow`
 and `stalin`.
 
 * `timsort` is Python’s default algorithm
+* [`bogo`sort](https://en.wikipedia.org/Bogosort) randomly shuffles the list
+  until it is sorted. May take an infinite amount of time!
 * `miracle`sort literally waits for a miracle. It checks if the list is sorted,
   and if it is not, it checks again. If a cosmic ray (or
   [another miracle](../../miraclesort.webm)) flips the right bits in your RAM

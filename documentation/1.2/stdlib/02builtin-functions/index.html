@@ -1050,10 +1050,10 @@ Note that <code>float("inf")</code> is infinity and <code>float("nan")</code> is
 <p>Returns the minimum element of the list. Ignores elements that are not numbers if <code>ignore_not_num</code> is <code>True</code>, otherwise crashes if such element exists.</p>
 <h3 id="sort"><code>sort</code></h3>
 <p>Syntax: <code>sort(value: list, &lt;mode: str = "timsort"&gt;)</code></p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <ul>
-<li>Slowsort was added in 1.2.0</li>
+<li>Slowsort and bogosort were added in 1.2.0</li>
 </ul>
 </div>
 <p>Sorts list <code>value</code> according to mode <code>mode</code>. Lefts the original list unchanged
@@ -1062,6 +1062,8 @@ Available modes are: <code>timsort</code> (default), <code>miracle</code>, <code
 and <code>stalin</code>.</p>
 <ul>
 <li><code>timsort</code> is Python’s default algorithm</li>
+<li><a href="https://en.wikipedia.org/Bogosort"><code>bogo</code>sort</a> randomly shuffles the list
+  until it is sorted. May take an infinite amount of time!</li>
 <li><code>miracle</code>sort literally waits for a miracle. It checks if the list is sorted,
   and if it is not, it checks again. If a cosmic ray (or
   <a href="../../../miraclesort.webm">another miracle</a>) flips the right bits in your RAM
