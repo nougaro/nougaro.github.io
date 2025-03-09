@@ -67,7 +67,9 @@ ANOTHER_AMAZING_CONSTANT = py2noug("Hello world :)", *default_pos())  # will be 
 (`py2noug` and `default_pos` are imported from `lib_to_make_libs`)
 
 ### Lib with functions
-If you want functions in your lib, paste this code in your file (replace the generic names/texts with appropriate things):
+If you want functions in your lib, paste this code in your file (replace the
+generic names/texts with appropriate things, except for `function_name`, as
+the class is actually a wrapper for all the functions in your module):
 ```python
 class YourModuleName(ModuleFunction):
     """ YourModuleName Module """

@@ -964,7 +964,9 @@ ANOTHER_AMAZING_CONSTANT = py2noug(&quot;Hello world :)&quot;, *default_pos())  
 </code></pre>
 <p>(<code>py2noug</code> and <code>default_pos</code> are imported from <code>lib_to_make_libs</code>)</p>
 <h3 id="lib-with-functions">Lib with functions</h3>
-<p>If you want functions in your lib, paste this code in your file (replace the generic names/texts with appropriate things):</p>
+<p>If you want functions in your lib, paste this code in your file (replace the
+generic names/texts with appropriate things, except for <code>function_name</code>, as
+the class is actually a wrapper for all the functions in your module):</p>
 <pre><code class="language-python">class YourModuleName(ModuleFunction):
     &quot;&quot;&quot; YourModuleName Module &quot;&quot;&quot;
     functions: dict[str, builtin_function_dict] = {}
