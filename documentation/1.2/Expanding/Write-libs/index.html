@@ -991,7 +991,8 @@ the class is actually a wrapper for all the functions in your module):</p>
     return Number(False, self.pos_start, other.pos_end).set_context(self.context), None
 </code></pre>
 </div>
-<p>Then, to add a function, add a method in this class following this syntax:</p>
+<p>Then, to add a function, add a method in this class following this syntax
+(here you can replace <code>function_name</code> with your actual function name):</p>
 <pre><code class="language-python">    def execute_function_name(self, context: Context):
         &quot;&quot;&quot; Docstring (optional) &quot;&quot;&quot;
         assert context.symbol_table is not None

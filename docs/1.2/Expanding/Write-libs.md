@@ -89,20 +89,21 @@ class YourModuleName(ModuleFunction):
 
 !!! note "Changed in 0.20.0-beta"
     Prior to 0.20.0, the method `is_eq` was named `get_comparison_eq` and had this syntax:
-    
+
         def get_comparison_eq(self, other: Value):
             if isinstance(other, YourModuleName):
                 return Number(self.name == other.name, self.pos_start, other.pos_end).set_context(self.context), None
             return Number(False, self.pos_start, other.pos_end).set_context(self.context), None
 
-Then, to add a function, add a method in this class following this syntax:
+Then, to add a function, add a method in this class following this syntax
+(here you can replace `function_name` with your actual function name):
 
 ```python
     def execute_function_name(self, context: Context):
         """ Docstring (optional) """
         assert context.symbol_table is not None
         ...
-    
+
     functions["function_name"] = {
         "function": execute_function_name,
         "param_names": ["parameter_1", "parameter_2"],
