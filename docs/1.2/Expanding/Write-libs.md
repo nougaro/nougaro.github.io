@@ -49,7 +49,7 @@ __LIB_VERSION__ = 4
     * prior to 0.20.0: `1`
     * 0.20.0: `2`
     * 0.21.0: `3`
-    * 0.22.0-0.23.0: `4`
+    * since 0.22.0: `4`
 
 ### Lib with constants
 If your lib contains constants, you can add them to the code, outside any class.
