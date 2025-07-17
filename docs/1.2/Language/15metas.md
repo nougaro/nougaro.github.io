@@ -6,6 +6,9 @@ Metas are a way to use other (or old) functionnalities in Nougaro.
 They’re used by adding `@meta metaName` or `@meta metaName value` at the beginning of a file or in an interactive shell.
 Note that, instead of `@`, you can use any of those prefixes: `#@`, `%@`, `@@`, `-@`, `$@`.
 
+!!! important
+    `value` should only be composed of ASCII upper- and lowercase letters.
+
 ## `appendNoneOnBreak`
 !!! note
     Added in 0.20.0-beta
